@@ -68,7 +68,7 @@ export default function FAQSection({ onOpenModal }: FAQSectionProps) {
             Frequently Asked Questions
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black text-[#111827] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight">
             Got Questions? <br />
             <span className="heading-gradient">
               We&apos;ve Got Clear Answers

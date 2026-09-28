@@ -58,7 +58,7 @@ export default function ProjectsSection({ onOpenModal }: ProjectsSectionProps) {
             Real Brand Portfolios
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black text-[#111827] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight">
             Work on Real Brand Campaigns <br />
             <span className="heading-gradient">
               With Actual Budgets &amp; Live Accounts

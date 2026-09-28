@@ -166,7 +166,7 @@ export default function CurriculumSection({ onDownloadSyllabus }: CurriculumSect
             2026 AI-Integrated Syllabus
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black text-[#111827] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight">
             Explore The Comprehensive <br />
             <span className="heading-gradient">
               70-Module Curriculum

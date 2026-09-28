@@ -142,7 +142,7 @@ export default function LeadModal({
           <div className="inline-block px-2.5 py-0.5 rounded-full bg-[#f3e8fa] border border-[#ebdcf5] text-[#4b1864] text-[10px] font-extrabold uppercase">
             Instant WhatsApp Confirmation
           </div>
-          <h3 className="text-xl sm:text-2xl font-black text-[#200e30] tracking-tight">
+          <h3 className="text-lg sm:text-xl font-black text-[#111827] tracking-tight">
             {title}
           </h3>
           <p className="text-xs text-[#5e4b6d]">

@@ -14,7 +14,7 @@ export default function PreFooterCTA({ onOpenModal }: PreFooterCTAProps) {
           Admissions Closing for Upcoming Batch
         </div>
 
-        <h2 className="text-3xl sm:text-5xl font-black text-[#111827] tracking-tight leading-tight">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight leading-tight">
           Ready to Accelerate Your Career with <br />
           <span className="heading-gradient">
             Delhi&apos;s #1 Digital Marketing Institute?

@@ -27,7 +27,7 @@ export default function HiringPartners() {
         <div className="inline-block px-3 py-1 rounded-full bg-[#f3e8fa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold uppercase tracking-wider">
           250+ Domestic &amp; Global Hiring Partners
         </div>
-        <h3 className="text-xl sm:text-2xl font-black text-[#111827] tracking-tight">
+        <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-[#111827] tracking-tight">
           Where DizitalAdda Alumni <span className="heading-gradient">Work &amp; Lead</span>
         </h3>
         <p className="text-xs sm:text-sm text-[#5e4b6d]">

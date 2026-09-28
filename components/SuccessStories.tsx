@@ -73,7 +73,7 @@ export default function SuccessStories() {
             Real Alumni Feedback
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black text-[#111827] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight">
             Loved By Over 25,000+ Learners <br />
             <span className="heading-gradient">
               With 4.9 Average Rating

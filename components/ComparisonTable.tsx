@@ -114,7 +114,7 @@ export default function ComparisonTable({ onOpenModal }: ComparisonTableProps) {
           <div className="inline-block px-3.5 py-1 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold uppercase tracking-wider">
             Side-By-Side Comparison Matrix
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111827] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight">
             Compare &amp; Choose With <br />
             <span className="heading-gradient">
               100% Clarity &amp; Transparency

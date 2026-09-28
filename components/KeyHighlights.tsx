@@ -59,7 +59,7 @@ export default function KeyHighlights({ onOpenModal }: KeyHighlightsProps) {
           <div className="inline-block px-3.5 py-1 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold uppercase tracking-wider">
             Measurable Career Outcomes
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111827] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight">
             Numbers That Define <br />
             <span className="heading-gradient">
               DizitalAdda Excellence

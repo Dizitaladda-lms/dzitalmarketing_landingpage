@@ -71,7 +71,7 @@ export default function CertificationSection({ onOpenModal }: CertificationSecti
               Industry Recognized Credentials
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111827] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight leading-tight">
               DizitalAdda&apos;s Certification <br />
               <span className="heading-gradient">
                 Helps You Get Hired!

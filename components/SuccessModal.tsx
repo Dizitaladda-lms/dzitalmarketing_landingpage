@@ -35,7 +35,7 @@ export default function SuccessModal({ leadData, onClose }: SuccessModalProps) {
           <div className="inline-block px-3 py-1 rounded-full bg-[#f3e8fa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold uppercase tracking-wider">
             Application Received Successfully
           </div>
-          <h3 className="text-2xl font-black text-[#111827] tracking-tight">
+          <h3 className="text-xl sm:text-2xl font-black text-[#111827] tracking-tight">
             Welcome, <span className="heading-gradient">{leadData.fullName || 'Learner'}</span>!
           </h3>
           <p className="text-xs sm:text-sm text-[#5e4b6d]">

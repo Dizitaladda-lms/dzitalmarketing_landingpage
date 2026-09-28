@@ -76,7 +76,7 @@ export default function BookDemoSection({ onSuccess }: BookDemoSectionProps) {
             100% Free 1-Hour Live Experience
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black text-[#111827] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight">
             Book a Free Demo Class <br />
             <span className="heading-gradient">
               Online or at Greater Kailash II Campus

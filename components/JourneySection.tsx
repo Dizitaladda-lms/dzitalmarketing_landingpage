@@ -54,7 +54,7 @@ export default function JourneySection({ onOpenModal }: JourneySectionProps) {
             Your Path to Success
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black text-[#111827] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight">
             Your 6-Step Journey <br />
             <span className="heading-gradient">
               From Day One to Dream Career

@@ -45,7 +45,7 @@ export default function AudienceSection({ onOpenModal }: AudienceSectionProps) {
               Designed for Everyone
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111827] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight leading-tight">
               Who Can Join Our <br />
               <span className="heading-gradient">
                 Digital Marketing Course?

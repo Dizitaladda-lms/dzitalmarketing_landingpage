@@ -136,7 +136,7 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
               #India&apos;s Most Recommended Digital Marketing Program
             </div>
 
-            <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-black tracking-tight text-[#111827] leading-[1.14]">
+            <h1 className="text-2xl sm:text-4xl lg:text-[40px] font-black tracking-tight text-[#111827] leading-[1.2]">
               Executive Certifications in <br className="hidden sm:inline" />
               <span className="heading-gradient">
                 Digital Marketing &amp; AI
@@ -325,6 +325,7 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
                         onChange={(e) => setFormData({ ...formData, course: e.target.value })}
                         className="w-full px-2.5 py-2 rounded-xl bg-[#faf7fc] border border-[#ebdcf5] focus:border-[#4b1864] text-[#200e30] text-xs focus:outline-none"
                       >
+                        <option value="Graduation in Dizital Marketing (3 years)">Graduation in Dizital Marketing (3 years)</option>
                         <option value="Expert in Digital Marketing (12 Months)">Expert (12 Months - 70 Modules)</option>
                         <option value="Advanced Digital Marketing (6 Months)">Advanced (6 Months - 60 Modules)</option>
                         <option value="Digital Marketing For Professionals (4 Months)">Professionals (4 Months)</option>
