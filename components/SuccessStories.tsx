@@ -6,12 +6,12 @@ export default function SuccessStories() {
   const [activeTab, setActiveTab] = useState<'reviews' | 'videos'>('reviews');
   const [videoIndex, setVideoIndex] = useState(0);
 
-  const videoIds = [
-    { id: 'KFWyifEYWyU', title: 'How Shiv Transitioned to Digital Marketing' },
-    { id: '5Ky9myAg6a8', title: 'Neha on Live Campaigns & SEO Training' },
-    { id: '0Y0wxv9Hrvc', title: 'Abhinav on Practical Exposure at GK-II' },
-    { id: '93nJRCQduxg', title: 'Tulika on Weekend Batches for Working Execs' },
-    { id: 'EdZT-if9tFU', title: 'Harvinder on Freelance Retainers & Ad Scaling' },
+  const videos = [
+    { src: '/videos/WhatsApp_Video.mp4', title: 'Student Story — Digital Marketing Journey' },
+    { src: '/videos/Naina.MP4', title: 'Naina on Digital Marketing Career Transition' },
+    { src: '/videos/IMG_0941.MP4', title: 'Student Story — Live Campaign Experience' },
+    { src: '/videos/IMG_0944.MP4', title: 'Student Story — Placement & Freelance Journey' },
+    { src: '/videos/IMG_0945.MP4', title: 'Student Story — SEO & Performance Marketing' },
   ];
 
   const studentReviews = [
@@ -158,19 +158,24 @@ export default function SuccessStories() {
           <div className="max-w-4xl mx-auto space-y-6">
             <div className="bg-[#faf7fc] rounded-2xl p-4 sm:p-6 border border-[#ebdcf5] shadow-md">
               <div className="aspect-video w-full rounded-xl overflow-hidden bg-black shadow-inner">
-                <iframe
-                  src={`https://www.youtube.com/embed/${videoIds[videoIndex].id}?rel=0&autoplay=0`}
-                  title={videoIds[videoIndex].title}
-                  className="w-full h-full border-0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+              <video
+                key={videos[videoIndex].src}
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-full object-contain bg-black"
+              >
+              <source src={videos[videoIndex].src} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+               
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
                 <div className="text-left">
                   <h4 className="text-base sm:text-lg font-bold text-[#200e30]">
-                    {videoIds[videoIndex].title}
+                    {videos[videoIndex].title}
                   </h4>
                   <p className="text-xs text-[#5e4b6d]">
                     Recorded live with DizitalAdda Alumni at Greater Kailash II, New Delhi
@@ -179,17 +184,17 @@ export default function SuccessStories() {
 
                 <div className="flex items-center gap-2">
                   <button
-                    onClick={() => setVideoIndex((prev) => (prev - 1 + videoIds.length) % videoIds.length)}
+                    onClick={() => setVideoIndex((prev) => (prev - 1 + videos.length) % videos.length)}
                     className="px-3 py-1.5 rounded-xl bg-white hover:bg-[#f3e8fa] border border-[#ebdcf5] text-[#200e30] text-xs font-bold"
                     aria-label="Previous video"
                   >
                     Prev
                   </button>
                   <span className="text-xs text-[#5e4b6d] font-mono">
-                    {videoIndex + 1} / {videoIds.length}
+                    {videoIndex + 1} / {videos.length}
                   </span>
                   <button
-                    onClick={() => setVideoIndex((prev) => (prev + 1) % videoIds.length)}
+                    onClick={() => setVideoIndex((prev) => (prev + 1) % videos.length)}
                     className="px-3 py-1.5 rounded-xl bg-white hover:bg-[#f3e8fa] border border-[#ebdcf5] text-[#200e30] text-xs font-bold"
                     aria-label="Next video"
                   >
@@ -201,7 +206,7 @@ export default function SuccessStories() {
 
             {/* Thumbnail Pickers */}
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
-              {videoIds.map((v, i) => (
+              {videos.map((v, i) => (
                 <button
                   key={i}
                   onClick={() => setVideoIndex(i)}
