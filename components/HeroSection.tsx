@@ -147,76 +147,20 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
               Learn Delhi&apos;s most rigorous 2026 AI-integrated curriculum — with <strong className="text-[#200e30]">70 Modules</strong>, <strong className="text-[#200e30]">60+ AI Marketing Tools</strong>, and <strong className="text-[#200e30]">10 Live Brand Campaigns</strong> with guaranteed in-house paid internship.
             </p>
 
-            {/* Hero Key Benefits (PW Skills structure, clean bullets, no icons) */}
-            <ul className="space-y-3 pt-1 text-left max-w-xl mx-auto lg:mx-0">
-              <li className="flex items-center gap-3">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#4b1864] shrink-0" />
-                <span className="text-sm sm:text-base font-bold text-[#200e30]">
-                  Generative AI Integrated Curriculum <span className="font-normal text-[#554266]">(70 Industry Modules)</span>
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#4b1864] shrink-0" />
-                <span className="text-sm sm:text-base font-bold text-[#200e30]">
-                  Classroom (GK-II New Delhi) &amp; Live Online Interactive Batches
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#4b1864] shrink-0" />
-                <span className="text-sm sm:text-base font-bold text-[#200e30]">
-                  100% Placement Support with Dedicated Career Drives
-                </span>
-              </li>
-            </ul>
-
-            {/* Social Proof Strip */}
-            <div className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5 border-t border-[#ebdcf5]">
-              {/* Overlapping Student Avatars */}
-              <div className="flex items-center">
-                <div className="flex -space-x-2.5 overflow-hidden">
-                  <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
-                    src="https://dizitaladda.com/profilepic01.webp"
-                    alt="Student 1"
-                    onError={(e) => {
-                      (e.target as HTMLElement).style.display = 'none';
-                    }}
-                  />
-                  <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
-                    src="https://dizitaladda.com/profilepic00123.webp"
-                    alt="Student 2"
-                    onError={(e) => {
-                      (e.target as HTMLElement).style.display = 'none';
-                    }}
-                  />
-                  <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
-                    src="https://dizitaladda.com/profilepic00122.webp"
-                    alt="Student 3"
-                    onError={(e) => {
-                      (e.target as HTMLElement).style.display = 'none';
-                    }}
-                  />
-                  <div className="h-10 w-10 rounded-full bg-[#4b1864] ring-2 ring-white flex items-center justify-center text-xs font-bold text-white">
-                    25k+
-                  </div>
-                </div>
-                <div className="ml-3 text-left">
-                  <div className="text-sm font-bold text-[#200e30]">25,000+ Students</div>
-                  <div className="text-xs text-[#665675]">Trained since 2009</div>
-                </div>
-              </div>
-
-              {/* Rating Proof */}
-              <div className="pl-0 sm:pl-4 border-t sm:border-t-0 sm:border-l border-[#ebdcf5] text-left">
-                <div className="text-sm font-extrabold text-[#b45309]">
-                  ★ 4.9 out of 5.0
-                </div>
-                <div className="text-xs text-[#554266]">
-                  12,872 Verified Google Reviews
-                </div>
-              </div>
+            {/* Quick Hero Reassurance Strip */}
+            <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 text-xs font-semibold text-[#5e4b6d]">
+              <span className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#4b1864]" />
+                100% Agency-Led &amp; Practical
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#4b1864]" />
+                Zero Coding Background Required
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#4b1864]" />
+                Delhi Campus + Live Online
+              </span>
             </div>
           </div>
 
