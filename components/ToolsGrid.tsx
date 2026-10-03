@@ -4,16 +4,46 @@ import React from 'react';
 
 export default function ToolsGrid() {
   const tools = [
-    { name: 'Google Ads',     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg' },
-    { name: 'Meta Ads',       logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/512px-Meta_Platforms_Inc._logo.svg.png' },
-    { name: 'SEMrush',        logo: 'https://cdn.worldvectorlogo.com/logos/semrush.svg' },
-    { name: 'Google Analytics',logo: 'https://www.vectorlogo.zone/logos/google_analytics/google_analytics-icon.svg' },
-    { name: 'Canva',          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg' },
-    { name: 'ChatGPT / AI',   logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png' },
-    { name: 'WordPress',      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg' },
-    { name: 'Google Tag Mgr', logo: 'https://www.vectorlogo.zone/logos/google_tag_manager/google_tag_manager-icon.svg' },
-    { name: 'Ahrefs',         logo: 'https://cdn.worldvectorlogo.com/logos/ahrefs.svg' },
-    { name: 'Mailchimp',      logo: 'https://www.vectorlogo.zone/logos/mailchimp/mailchimp-icon.svg' },
+    {
+      name: 'Google Ads',
+      logo: 'https://www.vectorlogo.zone/logos/google_ads/google_ads-icon.svg',
+    },
+    {
+      name: 'Meta Ads',
+      logo: 'https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg',
+    },
+    {
+      name: 'SEMrush',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/SEMrush_logo.png/320px-SEMrush_logo.png',
+    },
+    {
+      name: 'Google Analytics',
+      logo: 'https://www.vectorlogo.zone/logos/google_analytics/google_analytics-icon.svg',
+    },
+    {
+      name: 'Canva',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg',
+    },
+    {
+      name: 'ChatGPT',
+      logo: 'https://www.vectorlogo.zone/logos/openai/openai-icon.svg',
+    },
+    {
+      name: 'WordPress',
+      logo: 'https://www.vectorlogo.zone/logos/wordpress/wordpress-icon.svg',
+    },
+    {
+      name: 'Google Tag Mgr',
+      logo: 'https://www.vectorlogo.zone/logos/google_tag_manager/google_tag_manager-icon.svg',
+    },
+    {
+      name: 'Ahrefs',
+      logo: 'https://static.ahrefs.com/static/assets/img/header/logo.svg',
+    },
+    {
+      name: 'Mailchimp',
+      logo: 'https://www.vectorlogo.zone/logos/mailchimp/mailchimp-icon.svg',
+    },
   ];
 
   return (
@@ -37,12 +67,27 @@ export default function ToolsGrid() {
               key={i}
               className="bg-[#faf7fc] border border-[#ebdcf5] rounded-xl p-5 text-center hover:border-[#4b1864] hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md group"
             >
-              <img
-                src={tool.logo}
-                alt={tool.name}
-                className="w-12 h-12 mx-auto mb-3 object-contain group-hover:scale-110 transition-transform duration-200"
-                onError={(e) => { (e.target as HTMLImageElement).style.opacity = '0.3'; }}
-              />
+              {/* Logo with fallback to colored initial */}
+              <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+                <img
+                  src={tool.logo}
+                  alt={tool.name}
+                  className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-200"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    target.style.display = 'none';
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
+                {/* Fallback: colored initial circle */}
+                <div
+                  style={{ display: 'none' }}
+                  className="w-12 h-12 rounded-full bg-[#f3e8fa] border border-[#ebdcf5] items-center justify-center text-[#4b1864] font-black text-lg"
+                >
+                  {tool.name[0]}
+                </div>
+              </div>
               <p className="text-xs sm:text-sm font-bold text-[#200e30]">{tool.name}</p>
             </div>
           ))}
