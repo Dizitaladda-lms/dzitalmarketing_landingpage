@@ -9,16 +9,24 @@ interface WhyChooseProps {
 export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
   const features = [
     {
-      title: 'Hands-On Live Brand Projects',
-      desc: 'Work on 10 real client campaigns with actual ad budgets on Google Ads & Meta Ads — not dummy simulations. Build a portfolio that hiring managers actually want.',
+      title: 'Pioneering Hybrid Model',
+      desc: 'Attend interactive offline batches at Greater Kailash-II South Delhi campus or join live online from anywhere.',
     },
     {
-      title: '97% Placement Support',
-      desc: 'Dedicated placement cell with resume building, mock interviews, and direct access to 250+ hiring partners including Performics, HiveMinds, Dentsu & TATA CLiQ.',
+      title: '10 Live Client Brand Projects',
+      desc: 'Run real ads with live budgets on Google Ads & Meta Ads (not dummy simulations).',
     },
     {
-      title: 'Dual Certification + 11 Google Badges',
-      desc: 'Earn DizitalAdda certification recognized by industry + prep for all official Google, Meta & HubSpot certifications. Awarded Indian Icon Award by Dr. Kiran Bedi.',
+      title: '97% Placement Record',
+      desc: (
+        <>
+          Highest CTC of <strong className="text-[#b45309] font-bold">₹10.05 LPA</strong> &amp; 60% average hike across 250+ hiring partners.
+        </>
+      ),
+    },
+    {
+      title: '60+ AI Tools Mastery',
+      desc: 'ChatGPT-4o, Google Gemini, Perplexity, Canva AI, Midjourney, GA4, Semrush & Marketing Automation.',
     },
   ];
 
@@ -27,24 +35,31 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-          {/* Left: Features */}
+          {/* Left: Features from the user request */}
           <div>
+            <div className="inline-block px-3.5 py-1 rounded-full bg-[#f3e8fa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold uppercase tracking-wider mb-3">
+              Why Learn With Us
+            </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight mb-4">
               Why Choose <span className="heading-gradient">DizitalAdda?</span>
             </h2>
             <p className="text-sm sm:text-base text-[#5e4b6d] mb-8">
-              Delhi's most rigorous AI-integrated digital marketing program — built for high-paying career transitions and real business impact.
+              Delhi&apos;s most rigorous AI-integrated digital marketing program — built for high-paying career transitions and real business impact.
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               {features.map((f, i) => (
-                <div key={i} className="flex gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#f3e8fa] border border-[#ebdcf5] flex items-center justify-center shrink-0 font-black text-[#4b1864] text-sm">
+                <div key={i} className="flex gap-4 items-start">
+                  <div className="w-9 h-9 rounded-xl bg-[#f3e8fa] border border-[#ebdcf5] flex items-center justify-center shrink-0 font-black text-[#4b1864] text-sm mt-0.5">
                     {i + 1}
                   </div>
                   <div>
-                    <h4 className="text-base font-bold text-[#200e30] mb-1">{f.title}</h4>
-                    <p className="text-sm text-[#5e4b6d] leading-relaxed">{f.desc}</p>
+                    <h4 className="text-base font-bold text-[#200e30] mb-1">
+                      {f.title}
+                    </h4>
+                    <p className="text-sm text-[#5e4b6d] leading-relaxed">
+                      {f.desc}
+                    </p>
                   </div>
                 </div>
               ))}

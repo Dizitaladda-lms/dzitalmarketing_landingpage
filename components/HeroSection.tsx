@@ -147,36 +147,27 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
               Learn Delhi&apos;s most rigorous 2026 AI-integrated curriculum — with <strong className="text-[#200e30]">70 Modules</strong>, <strong className="text-[#200e30]">60+ AI Marketing Tools</strong>, and <strong className="text-[#200e30]">10 Live Brand Campaigns</strong> with guaranteed in-house paid internship.
             </p>
 
-            {/* USPs with Clean Formatting (No Icons) */}
-            <div className="space-y-3 pt-1 text-left max-w-xl mx-auto lg:mx-0">
-              <div className="flex items-start gap-3">
-                <span className="w-2 h-2 rounded-full bg-[#4b1864] shrink-0 mt-2" />
-                <p className="text-sm sm:text-base text-[#38264a]">
-                  <strong className="text-[#200e30]">Pioneering Hybrid Model:</strong> Attend interactive offline batches at Greater Kailash-II South Delhi campus or join live online from anywhere.
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <span className="w-2 h-2 rounded-full bg-[#4b1864] shrink-0 mt-2" />
-                <p className="text-sm sm:text-base text-[#38264a]">
-                  <strong className="text-[#200e30]">10 Live Client Brand Projects:</strong> Run real ads with live budgets on Google Ads &amp; Meta Ads (not dummy simulations).
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <span className="w-2 h-2 rounded-full bg-[#4b1864] shrink-0 mt-2" />
-                <p className="text-sm sm:text-base text-[#38264a]">
-                  <strong className="text-[#200e30]">97% Placement Record:</strong> Highest CTC of <span className="text-[#b45309] font-bold">₹10.05 LPA</span> &amp; 60% average hike across 250+ hiring partners.
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <span className="w-2 h-2 rounded-full bg-[#4b1864] shrink-0 mt-2" />
-                <p className="text-sm sm:text-base text-[#38264a]">
-                  <strong className="text-[#200e30]">60+ AI Tools Mastery:</strong> ChatGPT-4o, Google Gemini, Perplexity, Canva AI, Midjourney, GA4, Semrush &amp; Marketing Automation.
-                </p>
-              </div>
-            </div>
+            {/* Hero Key Benefits (PW Skills structure, clean bullets, no icons) */}
+            <ul className="space-y-3 pt-1 text-left max-w-xl mx-auto lg:mx-0">
+              <li className="flex items-center gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#4b1864] shrink-0" />
+                <span className="text-sm sm:text-base font-bold text-[#200e30]">
+                  Generative AI Integrated Curriculum <span className="font-normal text-[#554266]">(70 Industry Modules)</span>
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#4b1864] shrink-0" />
+                <span className="text-sm sm:text-base font-bold text-[#200e30]">
+                  Classroom (GK-II New Delhi) &amp; Live Online Interactive Batches
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#4b1864] shrink-0" />
+                <span className="text-sm sm:text-base font-bold text-[#200e30]">
+                  100% Placement Support with Dedicated Career Drives
+                </span>
+              </li>
+            </ul>
 
             {/* Social Proof Strip */}
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5 border-t border-[#ebdcf5]">

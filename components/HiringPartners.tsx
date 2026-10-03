@@ -6,43 +6,47 @@ export default function HiringPartners() {
   const partners = [
     {
       name: 'Accenture',
-      logo: 'https://www.vectorlogo.zone/logos/accenture/accenture-ar21.svg',
-    },
-    {
-      name: 'Dentsu',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Dentsu_new_logo.svg/320px-Dentsu_new_logo.svg.png',
-    },
-    {
-      name: 'Coursera',
-      logo: 'https://www.vectorlogo.zone/logos/coursera/coursera-ar21.svg',
+      logo: '/partners/accenture.svg',
     },
     {
       name: 'TCS',
-      logo: 'https://www.vectorlogo.zone/logos/tcs/tcs-ar21.svg',
+      logo: '/partners/tcs.webp',
     },
     {
       name: 'Cognizant',
-      logo: 'https://www.vectorlogo.zone/logos/cognizant/cognizant-ar21.svg',
+      logo: '/partners/cognizant.svg',
     },
     {
       name: 'Tech Mahindra',
-      logo: 'https://www.vectorlogo.zone/logos/techmahindra/techmahindra-ar21.svg',
+      logo: '/partners/tech-mahindra.webp',
     },
     {
       name: 'Infosys',
-      logo: 'https://www.vectorlogo.zone/logos/infosys/infosys-ar21.svg',
+      logo: '/partners/infosys.svg',
     },
     {
       name: 'Wipro',
-      logo: 'https://www.vectorlogo.zone/logos/wipro/wipro-ar21.svg',
+      logo: '/partners/wipro.svg',
     },
     {
-      name: 'HCL',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/HCL_Technologies_official_logo.svg/320px-HCL_Technologies_official_logo.svg.png',
+      name: 'Rapido',
+      logo: '/partners/rapido.webp',
     },
     {
-      name: 'Meesho',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/8/80/Meesho_Logo_Full.png',
+      name: 'NoBroker',
+      logo: '/partners/nobroker.webp',
+    },
+    {
+      name: 'Haptik',
+      logo: '/partners/haptik.webp',
+    },
+    {
+      name: 'IQVIA',
+      logo: '/partners/iqvia.webp',
+    },
+    {
+      name: 'Brillio',
+      logo: '/partners/brillio.webp',
     },
     {
       name: 'Performics',
@@ -55,17 +59,9 @@ export default function HiringPartners() {
       fallbackText: 'HiveMinds',
     },
     {
-      name: 'TATA CLiQ',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Tatacliq_logo.png/320px-Tatacliq_logo.png',
-    },
-    {
-      name: 'Growisto',
+      name: 'Dentsu',
       logo: null,
-      fallbackText: 'Growisto',
-    },
-    {
-      name: 'LAVA',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Lava_International_logo.svg/320px-Lava_International_logo.svg.png',
+      fallbackText: 'Dentsu',
     },
   ];
 
@@ -96,20 +92,12 @@ export default function HiringPartners() {
                   src={partner.logo}
                   alt={partner.name}
                   className="max-h-9 max-w-[130px] object-contain"
-                  onError={(e) => {
-                    const target = e.currentTarget;
-                    target.style.display = 'none';
-                    const fallback = target.nextElementSibling as HTMLElement;
-                    if (fallback) fallback.style.display = 'block';
-                  }}
                 />
-              ) : null}
-              <span
-                style={{ display: partner.logo ? 'none' : 'block' }}
-                className="font-extrabold text-sm text-[#200e30] tracking-wide text-center"
-              >
-                {partner.name}
-              </span>
+              ) : (
+                <span className="font-extrabold text-sm text-[#200e30] tracking-wide text-center">
+                  {partner.fallbackText || partner.name}
+                </span>
+              )}
             </div>
           ))}
         </div>
