@@ -112,10 +112,10 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
   };
 
   return (
-    <section className="relative pt-8 pb-16 sm:py-16 bg-gradient-to-b from-[#faf7fc] via-[#f7f1fb] to-[#faf7fc] border-b border-[#ebdcf5]">
+    <section className="relative pt-6 pb-12 sm:pt-8 sm:pb-14 bg-gradient-to-b from-[#faf7fc] via-[#f7f1fb] to-[#faf7fc] border-b border-[#ebdcf5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Award Badges Ribbon */}
-        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-6">
+        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-4 sm:mb-5">
           <div className="px-3.5 py-1 rounded-full bg-white border border-[#e8d8f5] text-xs font-semibold text-[#4b1864] shadow-sm">
             <span className="font-bold">Indian Icon Award</span> — by Dr. Kiran Bedi
           </div>
@@ -129,9 +129,9 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
           {/* Left Column: Headlines & Subheading (PW Skills Text) */}
-          <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div className="lg:col-span-7 space-y-5 sm:space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold tracking-wide">
               <span className="w-2 h-2 rounded-full bg-[#4b1864] animate-pulse" />
               Microsoft Certified &bull; Govt. Recognized
@@ -145,21 +145,21 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
               Learn AI-powered marketing tools, work on real-world projects, and grow your career with placement assistance through the <strong className="text-[#200e30]">DizitalAdda</strong> Certified Digital Marketing Course.
             </p>
 
-            {/* Quick Hero Reassurance Strip */}
-            <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 text-xs font-semibold text-[#5e4b6d]">
-              <span className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#4b1864]" />
-                Generative AI Integrated Curriculum
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#4b1864]" />
-                Live + Classroom Interactive Batches
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#4b1864]" />
-                100% Job &amp; Placement Assistance
-              </span>
-            </div>
+            {/* Key Benefits List from User Image */}
+            <ul className="space-y-3.5 pt-2 text-left max-w-xl mx-auto lg:mx-0">
+              <li className="flex items-center gap-3.5 text-base sm:text-lg font-bold text-[#111827]">
+                <span className="text-2xl shrink-0">🤖</span>
+                <span>Generative AI Integrated Curriculum</span>
+              </li>
+              <li className="flex items-center gap-3.5 text-base sm:text-lg font-bold text-[#111827]">
+                <span className="text-2xl shrink-0">⏳</span>
+                <span>3 Months Duration | Live + Recorded Classes</span>
+              </li>
+              <li className="flex items-center gap-3.5 text-base sm:text-lg font-bold text-[#111827]">
+                <span className="text-2xl shrink-0">💼</span>
+                <span>Job Assistance</span>
+              </li>
+            </ul>
           </div>
 
           {/* Right Column: Clean Light Theme Lead Capture Form (PW Skills Text) */}
