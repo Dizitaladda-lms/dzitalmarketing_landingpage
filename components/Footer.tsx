@@ -77,13 +77,19 @@ export default function Footer({ onOpenModal, onOpenAdmin }: FooterProps) {
 
         {/* Disclaimer */}
         <p className="text-[11px] text-[#8a7a99] leading-relaxed border-t border-[#ebdcf5] pt-4">
-          Disclaimer: Program outcomes and salary hikes depend on student dedication, project submissions, technical assessment performance, and interview preparation. 100% placement support indicates continuous mentorship, profile optimization, and referral drives through our network of 250+ hiring partners.
+          Empowering careers through industry-aligned education and cutting-edge technology. Disclaimer: Program outcomes and salary hikes depend on student dedication, project submissions, technical assessment performance, and interview preparation. 100% placement support indicates continuous mentorship, profile optimization, and referral drives through our network of 250+ hiring partners.
         </p>
 
-        {/* Bottom Bar with Admin Lead Viewer Trigger */}
+        {/* Bottom Bar with Admin Lead Viewer Trigger & Policy Links */}
         <div className="pt-4 border-t border-[#ebdcf5] flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-[#8a7a99]">
-          <div>
-            &copy; {new Date().getFullYear()} DizitalAdda Academy. All rights reserved.
+          <div className="flex flex-wrap items-center gap-4">
+            <span>&copy; {new Date().getFullYear()} DizitalAdda. All rights reserved.</span>
+            <span className="hidden sm:inline">&bull;</span>
+            <a href="#" className="hover:text-[#4b1864] transition-colors">Terms of Service</a>
+            <span className="hidden sm:inline">&bull;</span>
+            <a href="#" className="hover:text-[#4b1864] transition-colors">Privacy Policy</a>
+            <span className="hidden sm:inline">&bull;</span>
+            <a href="#" className="hover:text-[#4b1864] transition-colors">Contact Us</a>
           </div>
 
           <div className="flex items-center gap-4">

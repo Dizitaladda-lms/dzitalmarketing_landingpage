@@ -20,7 +20,7 @@ export default function MobileStickyBar({ onOpenModal }: MobileStickyBarProps) {
         onClick={onOpenModal}
         className="flex-[2] py-2.5 rounded-xl bg-[#4b1864] text-white text-xs font-extrabold flex items-center justify-center shadow-md active:scale-95 transition-transform cursor-pointer"
       >
-        Get Syllabus &amp; Demo
+        Apply Now
       </button>
     </div>
   );

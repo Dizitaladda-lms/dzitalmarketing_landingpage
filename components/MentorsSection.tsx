@@ -94,19 +94,12 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
     <section id="mentors" className="py-20 bg-white relative overflow-hidden border-t border-[#ebdcf5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="inline-block px-3.5 py-1.5 rounded-full bg-[#f3e8fa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold uppercase tracking-wider">
-            Learn From Active Agency Practitioners
-          </div>
-
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight">
-            Meet Your Expert <br />
-            <span className="heading-gradient">
-              Digital Marketing Mentors
-            </span>
+            Learn From <span className="heading-gradient">Top Industry Leaders</span>
           </h2>
 
-          <p className="text-sm sm:text-base text-[#5e4b6d]">
-            At DizitalAdda, you don&apos;t learn from textbook instructors. Your trainers are active agency practitioners who manage live campaigns, real client budgets, and deliver commercial results every single day.
+          <p className="text-sm sm:text-base text-[#5e4b6d] font-medium">
+            Learn directly from experts who have managed multi-crore ad budgets and scaled global brands.
           </p>
         </div>
 

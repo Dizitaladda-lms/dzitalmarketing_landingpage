@@ -68,14 +68,11 @@ export default function HiringPartners() {
   return (
     <section id="placements" className="py-14 bg-[#faf7fc] border-y border-[#ebdcf5] overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center space-y-2">
-        <div className="inline-block px-3 py-1 rounded-full bg-[#f3e8fa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold uppercase tracking-wider">
-          250+ Domestic &amp; Global Hiring Partners
-        </div>
-        <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-[#111827] tracking-tight">
-          Where DizitalAdda Alumni <span className="heading-gradient">Work &amp; Lead</span>
-        </h3>
-        <p className="text-xs sm:text-sm text-[#5e4b6d]">
-          Our graduates receive direct referrals and off-campus placement drives across top agencies, funded startups, and enterprises.
+        <h2 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">
+          Our Students Work At <span className="heading-gradient">Top Brands</span>
+        </h2>
+        <p className="text-sm sm:text-base text-[#5e4b6d]">
+          Join 25,000+ alumni working at global tech giants and leading Indian startups.
         </p>
       </div>
 

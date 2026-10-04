@@ -130,52 +130,50 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-          {/* Left Column: Headlines & USPs */}
+          {/* Left Column: Headlines & Subheading (PW Skills Text) */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            <div className="inline-block px-3.5 py-1.5 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold tracking-wide">
-              #India&apos;s Most Recommended Digital Marketing Program
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold tracking-wide">
+              <span className="w-2 h-2 rounded-full bg-[#4b1864] animate-pulse" />
+              Microsoft Certified &bull; Govt. Recognized
             </div>
 
-            <h1 className="text-2xl sm:text-4xl lg:text-[40px] font-black tracking-tight text-[#111827] leading-[1.2]">
-              Executive Certifications in <br className="hidden sm:inline" />
-              <span className="heading-gradient">
-                Digital Marketing &amp; AI
-              </span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#111827] leading-[1.2]">
+              Master <span className="heading-gradient">Digital Marketing</span> with AI
             </h1>
 
-            <p className="text-base sm:text-lg text-[#554266] leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
-              Learn Delhi&apos;s most rigorous 2026 AI-integrated curriculum — with <strong className="text-[#200e30]">70 Modules</strong>, <strong className="text-[#200e30]">60+ AI Marketing Tools</strong>, and <strong className="text-[#200e30]">10 Live Brand Campaigns</strong> with guaranteed in-house paid internship.
+            <p className="text-base sm:text-lg text-[#554266] leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
+              Learn AI-powered marketing tools, work on real-world projects, and grow your career with placement assistance through the <strong className="text-[#200e30]">DizitalAdda</strong> Certified Digital Marketing Course.
             </p>
 
             {/* Quick Hero Reassurance Strip */}
             <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 text-xs font-semibold text-[#5e4b6d]">
               <span className="flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-[#4b1864]" />
-                100% Agency-Led &amp; Practical
+                Generative AI Integrated Curriculum
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-[#4b1864]" />
-                Zero Coding Background Required
+                Live + Classroom Interactive Batches
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-[#4b1864]" />
-                Delhi Campus + Live Online
+                100% Job &amp; Placement Assistance
               </span>
             </div>
           </div>
 
-          {/* Right Column: Clean Light Theme Lead Capture Form */}
+          {/* Right Column: Clean Light Theme Lead Capture Form (PW Skills Text) */}
           <div className="lg:col-span-5">
             <div className="bg-white border-2 border-[#ebdcf5] rounded-2xl p-6 sm:p-7 shadow-xl shadow-[#4b1864]/5 relative form-card-shadow">
-              <div className="text-left mb-5">
+              <div className="text-center mb-5">
                 <span className="text-[11px] font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-[#fef3c7] text-[#92400e] inline-block mb-1.5">
-                  Limited Batch Seats
+                  Limited Seats!
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-[#200e30] tracking-tight">
-                  Book Free Counselling
+                  Speak To Our Counsellor
                 </h3>
                 <p className="text-xs sm:text-sm text-[#665675] mt-0.5">
-                  Get full 70-module syllabus + fee structure on WhatsApp
+                  Fill details to download curriculum &amp; speak to experts.
                 </p>
               </div>
 
@@ -320,11 +318,11 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
                     disabled={loading}
                     className="w-full py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm sm:text-base shadow-lg shadow-[#4b1864]/20 transition-all hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center cursor-pointer disabled:opacity-70 mt-2"
                   >
-                    {loading ? 'Submitting Application...' : 'Apply Now & Get Free Demo Class'}
+                    {loading ? 'Submitting...' : 'Book A Free Session'}
                   </button>
 
                   <div className="text-center text-[11px] text-[#665675] pt-1">
-                    100% Privacy • Zero Spam Call Policy • Instant WhatsApp Delivery
+                    By submitting, you agree to our Terms &amp; Privacy Policy.
                   </div>
                 </form>
               )}

@@ -43,8 +43,8 @@ export default function DigitalMarketingLandingPage() {
 
   const openModal = (title?: string, subtitle?: string, source?: string) => {
     setModalConfig({
-      title:    title    || 'Book Free 1-on-1 Career Counselling',
-      subtitle: subtitle || 'Get personalized career roadmap + 70-module AI syllabus on WhatsApp',
+      title:    title    || 'Speak To Our Counsellor',
+      subtitle: subtitle || 'Fill details to download curriculum & speak to experts.',
       source:   source   || 'CTA Button',
     });
     setModalOpen(true);

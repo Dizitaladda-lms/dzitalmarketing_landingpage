@@ -90,7 +90,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               onClick={onOpenModal}
               className="px-5 py-2.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer"
             >
-              Book Free Demo
+              Apply Now
             </button>
           </div>
 
@@ -100,7 +100,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               onClick={onOpenModal}
               className="px-3 py-1.5 rounded-lg bg-[#4b1864] text-white font-bold text-[11px]"
             >
-              Book Demo
+              Apply Now
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

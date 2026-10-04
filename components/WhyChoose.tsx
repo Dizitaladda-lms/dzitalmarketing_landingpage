@@ -9,24 +9,24 @@ interface WhyChooseProps {
 export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
   const features = [
     {
-      title: 'Pioneering Hybrid Model',
-      desc: 'Attend interactive offline batches at Greater Kailash-II South Delhi campus or join live online from anywhere.',
+      title: 'Hands-on Industry Projects',
+      desc: 'Work on real-world case studies including SEO audits, 10 live ad campaigns with actual budgets, and social media growth strategies.',
     },
     {
-      title: '10 Live Client Brand Projects',
-      desc: 'Run real ads with live budgets on Google Ads & Meta Ads (not dummy simulations).',
-    },
-    {
-      title: '97% Placement Record',
+      title: 'Placement Support',
       desc: (
         <>
-          Highest CTC of <strong className="text-[#b45309] font-bold">₹10.05 LPA</strong> &amp; 60% average hike across 250+ hiring partners.
+          Dedicated career coaches, resume building, mock interviews, and direct access to 250+ hiring partners with highest CTC of <strong className="text-[#b45309] font-bold">₹10.05 LPA</strong>.
         </>
       ),
     },
     {
-      title: '60+ AI Tools Mastery',
-      desc: 'ChatGPT-4o, Google Gemini, Perplexity, Canva AI, Midjourney, GA4, Semrush & Marketing Automation.',
+      title: 'Dual Certification',
+      desc: 'Earn recognized certificates from DizitalAdda & NSDC, plus complete preparation for official Google & Meta certifications.',
+    },
+    {
+      title: 'Pioneering Hybrid Model & 60+ AI Tools',
+      desc: 'Attend interactive offline batches at Greater Kailash-II South Delhi campus or join live online from anywhere, mastering ChatGPT-4o, Gemini & Automations.',
     },
   ];
 
@@ -37,14 +37,11 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
 
           {/* Left: Features from the user request */}
           <div>
-            <div className="inline-block px-3.5 py-1 rounded-full bg-[#f3e8fa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold uppercase tracking-wider mb-3">
-              Why Learn With Us
-            </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight mb-4">
-              Why Choose <span className="heading-gradient">DizitalAdda?</span>
+              Why Choose <span className="heading-gradient">DizitalAdda Digital Marketing Course?</span>
             </h2>
-            <p className="text-sm sm:text-base text-[#5e4b6d] mb-8">
-              Delhi&apos;s most rigorous AI-integrated digital marketing program — built for high-paying career transitions and real business impact.
+            <p className="text-sm sm:text-base text-[#5e4b6d] mb-8 font-medium">
+              A comprehensive online and classroom digital marketing course designed for high-paying career transitions.
             </p>
 
             <div className="space-y-5">

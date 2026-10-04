@@ -14,8 +14,8 @@ interface LeadModalProps {
 export default function LeadModal({
   isOpen,
   onClose,
-  title = 'Book Free 1-on-1 Career Counselling',
-  subtitle = 'Get personalized career roadmap + 70-module AI syllabus on WhatsApp',
+  title = 'Speak To Our Counsellor',
+  subtitle = 'Fill details to download curriculum & speak to experts.',
   sourceTag = 'Modal CTA',
   onSubmitSuccess,
 }: LeadModalProps) {
@@ -256,13 +256,11 @@ export default function LeadModal({
             disabled={loading}
             className="w-full py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#3d1252] text-white font-extrabold text-sm sm:text-base shadow-md transition-all hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center cursor-pointer disabled:opacity-70 mt-2"
           >
-            {loading ? 'Submitting Application...' : 'Claim Early Bird Seat Now'}
+            {loading ? 'Submitting...' : 'Book A Free Session'}
           </button>
 
-          <div className="flex items-center justify-center gap-3 text-[10px] text-[#8a7a99] pt-1">
-            <span>100% Privacy</span>
-            <span>•</span>
-            <span>Zero Spam Policy</span>
+          <div className="text-center text-[11px] text-[#665675] pt-1">
+            By submitting, you agree to our Terms &amp; Privacy Policy.
           </div>
         </form>
       </div>
