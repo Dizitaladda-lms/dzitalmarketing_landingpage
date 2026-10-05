@@ -143,7 +143,7 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
               </li>
               <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
                 <span className="text-xl sm:text-2xl shrink-0">⏳</span>
-                <span>3 Months Duration | Live + Recorded Classes</span>
+                <span>3 Months Duration | Offline + Recorded Classes</span>
               </li>
               <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
                 <span className="text-xl sm:text-2xl shrink-0">💼</span>
