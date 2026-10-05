@@ -73,11 +73,11 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
           </div>
 
           {/* Right: Stats cards visual */}
-          <div className="relative">
+          <div className="relative mt-6 lg:mt-0">
             {/* Decorative background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#f3e8fa] to-[#ebdcf5] rounded-2xl rotate-2 opacity-60" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#f3e8fa] to-[#ebdcf5] rounded-2xl rotate-2 opacity-60 pointer-events-none" />
 
-            <div className="relative grid grid-cols-2 gap-4 p-6 bg-white rounded-2xl border border-[#ebdcf5] shadow-xl">
+            <div className="relative grid grid-cols-2 gap-3 sm:gap-4 p-4 sm:p-6 bg-white rounded-2xl border border-[#ebdcf5] shadow-xl">
               {[
                 { val: '₹10.05 LPA', label: 'Highest CTC Package', color: 'text-[#b45309]' },
                 { val: '97%',        label: 'Placement Rate',       color: 'text-[#047857]' },
@@ -86,21 +86,21 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
                 { val: '15 Max',     label: 'Micro-Batch Size',     color: 'text-[#9d174d]' },
                 { val: '60+ Tools',  label: 'AI Tools Covered',     color: 'text-[#6b21a8]' },
               ].map((stat, i) => (
-                <div key={i} className="bg-[#faf7fc] rounded-xl p-4 border border-[#ebdcf5] text-center">
-                  <div className={`text-2xl font-black ${stat.color}`}>{stat.val}</div>
-                  <div className="text-[11px] text-[#5e4b6d] font-semibold mt-0.5">{stat.label}</div>
+                <div key={i} className="bg-[#faf7fc] rounded-xl p-3 sm:p-4 border border-[#ebdcf5] text-center">
+                  <div className={`text-xl sm:text-2xl font-black ${stat.color}`}>{stat.val}</div>
+                  <div className="text-[10px] sm:text-[11px] text-[#5e4b6d] font-semibold mt-0.5">{stat.label}</div>
                 </div>
               ))}
             </div>
 
-            {/* Floating badge */}
-            <div className="absolute -bottom-4 -left-4 bg-white border border-[#ebdcf5] rounded-xl px-4 py-3 shadow-lg flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#f3e8fa] flex items-center justify-center text-[#4b1864] font-black text-sm">
+            {/* Floating badge (safe position on mobile to prevent overflow) */}
+            <div className="absolute -bottom-4 left-2 sm:-left-4 bg-white border border-[#ebdcf5] rounded-xl px-3 sm:px-4 py-2 sm:py-3 shadow-lg flex items-center gap-2.5 sm:gap-3">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#f3e8fa] flex items-center justify-center text-[#4b1864] font-black text-xs sm:text-sm">
                 55%
               </div>
               <div>
-                <p className="text-[10px] text-[#5e4b6d] font-bold">Avg. Hike</p>
-                <p className="text-sm font-black text-[#4b1864]">55% – 80%</p>
+                <p className="text-[9px] sm:text-[10px] text-[#5e4b6d] font-bold">Avg. Hike</p>
+                <p className="text-xs sm:text-sm font-black text-[#4b1864]">55% – 80%</p>
               </div>
             </div>
           </div>

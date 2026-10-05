@@ -61,11 +61,11 @@ export default function ToolsGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-6">
           {tools.map((tool, i) => (
             <div
               key={i}
-              className="bg-[#faf7fc] border border-[#ebdcf5] rounded-xl p-5 text-center hover:border-[#4b1864] hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md group flex flex-col items-center justify-center"
+              className="bg-[#faf7fc] border border-[#ebdcf5] rounded-xl p-3.5 sm:p-5 text-center hover:border-[#4b1864] hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md group flex flex-col items-center justify-center"
             >
               <div className="w-14 h-14 mx-auto mb-3 flex items-center justify-center">
                 <img

@@ -115,56 +115,63 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
     <section className="relative pt-6 pb-12 sm:pt-8 sm:pb-14 bg-gradient-to-b from-[#faf7fc] via-[#f7f1fb] to-[#faf7fc] border-b border-[#ebdcf5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Award Badges Ribbon */}
-        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-4 sm:mb-5">
-          <div className="px-3.5 py-1 rounded-full bg-white border border-[#e8d8f5] text-xs font-semibold text-[#4b1864] shadow-sm">
-            <span className="font-bold">Indian Icon Award</span> — by Dr. Kiran Bedi
-          </div>
-
-          <div className="px-3.5 py-1 rounded-full bg-white border border-[#e8d8f5] text-xs font-semibold text-[#4b1864] shadow-sm">
-            <span className="font-bold">Bharat Business Award</span> — by Ashneer Grover
-          </div>
-
-          <div className="px-3.5 py-1 rounded-full bg-white border border-[#e8d8f5] text-xs font-semibold text-[#4b1864] shadow-sm">
-            <span className="font-bold">The Excellence Award</span> — Hotel School
-          </div>
+         <div className="px-2.5 sm:px-3.5 py-1 rounded-full bg-white border border-[#e8d8f5] text-[10px] sm:text-xs font-semibold text-[#4b1864] shadow-sm">
+          
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-start">
           {/* Left Column: Headlines & Subheading (PW Skills Text) */}
-          <div className="lg:col-span-7 space-y-5 sm:space-y-6 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold tracking-wide">
+          <div className="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-[11px] sm:text-xs font-bold tracking-wide">
               <span className="w-2 h-2 rounded-full bg-[#4b1864] animate-pulse" />
               Microsoft Certified &bull; Govt. Recognized
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#111827] leading-[1.2]">
+            <h1 className="text-[26px] sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#111827] leading-[1.2]">
               Master <span className="heading-gradient">Digital Marketing</span> with AI
             </h1>
 
-            <p className="text-base sm:text-lg text-[#554266] leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
+            <p className="text-sm sm:text-base lg:text-lg text-[#554266] leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
               Learn AI-powered marketing tools, work on real-world projects, and grow your career with placement assistance through the <strong className="text-[#200e30]">DizitalAdda</strong> Certified Digital Marketing Course.
             </p>
 
             {/* Key Benefits List from User Image */}
-            <ul className="space-y-3.5 pt-2 text-left max-w-xl mx-auto lg:mx-0">
-              <li className="flex items-center gap-3.5 text-base sm:text-lg font-bold text-[#111827]">
-                <span className="text-2xl shrink-0">🤖</span>
+            <ul className="space-y-3 pt-1 sm:pt-2 text-left max-w-xl mx-auto lg:mx-0">
+              <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
+                <span className="text-xl sm:text-2xl shrink-0">🤖</span>
                 <span>Generative AI Integrated Curriculum</span>
               </li>
-              <li className="flex items-center gap-3.5 text-base sm:text-lg font-bold text-[#111827]">
-                <span className="text-2xl shrink-0">⏳</span>
+              <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
+                <span className="text-xl sm:text-2xl shrink-0">⏳</span>
                 <span>3 Months Duration | Live + Recorded Classes</span>
               </li>
-              <li className="flex items-center gap-3.5 text-base sm:text-lg font-bold text-[#111827]">
-                <span className="text-2xl shrink-0">💼</span>
+              <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
+                <span className="text-xl sm:text-2xl shrink-0">💼</span>
                 <span>Job Assistance</span>
               </li>
+             <li className="flex items-centre gap - 3 text-sm sm:text-base lg:text-lg font-bold text-[#11827]">
+               <span className='text-x1 sm:text-2x1 shrink-0'></span>
+               <span>Indian Icon Award — by Dr. Kiran Bedi</span>
+             </li>
+
+             <li className="flex items-centre gap - 3 text-sm sm:text-base lg:text-lg font-bold text-[#11827]">
+               <span className='text-x1 sm:text-2x1 shrink-0'></span>
+               <span>Bharat Business Award — by Ashneer Grover</span>
+             </li>
+
+             <li className="flex items-centre gap - 3 text-sm sm:text-base lg:text-lg font-bold text-[#11827]">
+               <span className='text-x1 sm:text-2x1 shrink-0'></span>
+               <span>The Excellence Award — Hotel School</span>
+             </li>
+
+
+
             </ul>
           </div>
 
           {/* Right Column: Clean Light Theme Lead Capture Form (PW Skills Text) */}
           <div className="lg:col-span-5">
-            <div className="bg-white border-2 border-[#ebdcf5] rounded-2xl p-6 sm:p-7 shadow-xl shadow-[#4b1864]/5 relative form-card-shadow">
+            <div className="bg-white border-2 border-[#ebdcf5] rounded-2xl p-4 sm:p-7 shadow-xl shadow-[#4b1864]/5 relative form-card-shadow">
               <div className="text-center mb-5">
                 <span className="text-[11px] font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-[#fef3c7] text-[#92400e] inline-block mb-1.5">
                   Limited Seats!

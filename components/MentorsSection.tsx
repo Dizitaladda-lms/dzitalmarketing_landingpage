@@ -103,11 +103,11 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {mentors.map((m, idx) => (
             <div
               key={idx}
-              className="bg-[#faf7fc] rounded-2xl p-6 flex flex-col justify-between border border-[#ebdcf5] hover:border-[#4b1864] transition-all duration-300 shadow-sm hover:shadow-md group text-center"
+              className="bg-[#faf7fc] rounded-2xl p-5 sm:p-6 flex flex-col justify-between border border-[#ebdcf5] hover:border-[#4b1864] transition-all duration-300 shadow-sm hover:shadow-md group text-center"
             >
               <div className="space-y-3">
                 <div className="relative mx-auto w-24 h-24">
@@ -164,10 +164,10 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-8 sm:mt-12 text-center px-2">
           <button
             onClick={onOpenModal}
-            className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#3d1252] text-white font-extrabold text-sm shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer"
+            className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#3d1252] text-white font-extrabold text-xs sm:text-sm shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer leading-tight text-center"
           >
             Book a 1-on-1 Mentorship Session with Dr. Gulshan Kumar
           </button>

@@ -15,17 +15,17 @@ export default function StatsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
         {/* 4 Core Numbers Bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
           {stats.map((s, i) => (
-            <div key={i} className="px-2">
+            <div key={i} className="px-2 py-1">
               <p className="text-2xl sm:text-3xl font-black text-[#4b1864] mb-1">{s.value}</p>
-              <p className="text-sm font-bold text-[#200e30]">{s.label}</p>
+              <p className="text-xs sm:text-sm font-bold text-[#200e30]">{s.label}</p>
             </div>
           ))}
         </div>
 
         {/* Program Highlights & Student Trust Proof Card */}
-        <div className="bg-[#faf7fc] border border-[#ebdcf5] rounded-2xl p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-sm">
+        <div className="bg-[#faf7fc] border border-[#ebdcf5] rounded-2xl p-4 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-sm">
           
           {/* 3 Key Benefits */}
           <ul className="space-y-3.5 text-left w-full lg:w-auto">

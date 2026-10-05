@@ -52,22 +52,22 @@ export default function ProjectsSection({ onOpenModal }: ProjectsSectionProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {projects.map((proj, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl p-6 sm:p-7 flex flex-col justify-between border border-[#ebdcf5] hover:border-[#4b1864] transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 group text-left"
+              className="bg-white rounded-2xl p-5 sm:p-7 flex flex-col justify-between border border-[#ebdcf5] hover:border-[#4b1864] transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 group text-left"
             >
               <div>
-                <div className="w-12 h-12 rounded-xl bg-[#f3e8fa] border border-[#ebdcf5] flex items-center justify-center text-[#4b1864] font-black text-base mb-5 group-hover:bg-[#4b1864] group-hover:text-white transition-colors">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#f3e8fa] border border-[#ebdcf5] flex items-center justify-center text-[#4b1864] font-black text-sm sm:text-base mb-4 sm:mb-5 group-hover:bg-[#4b1864] group-hover:text-white transition-colors">
                   {proj.id}
                 </div>
 
-                <h3 className="text-lg font-bold text-[#111827] mb-3 leading-snug">
+                <h3 className="text-base sm:text-lg font-bold text-[#111827] mb-2 sm:mb-3 leading-snug">
                   {proj.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-[#5e4b6d] leading-relaxed mb-6 font-normal">
+                <p className="text-xs sm:text-sm text-[#5e4b6d] leading-relaxed mb-5 sm:mb-6 font-normal">
                   {proj.desc}
                 </p>
               </div>
@@ -86,19 +86,19 @@ export default function ProjectsSection({ onOpenModal }: ProjectsSectionProps) {
           ))}
 
           {/* 6th Card: Join Next Batch CTA Card */}
-          <div className="bg-gradient-to-br from-[#4b1864] to-[#300c40] rounded-2xl p-8 flex flex-col justify-center items-center text-center shadow-xl text-white relative overflow-hidden">
-            <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center font-black text-2xl mb-4 text-[#fde047]">
+          <div className="bg-gradient-to-br from-[#4b1864] to-[#300c40] rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-center text-center shadow-xl text-white relative overflow-hidden">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white/10 flex items-center justify-center font-black text-xl sm:text-2xl mb-4 text-[#fde047]">
               ★
             </div>
-            <h3 className="text-xl sm:text-2xl font-black mb-3">
+            <h3 className="text-xl sm:text-2xl font-black mb-2 sm:mb-3">
               Ready to build your portfolio?
             </h3>
-            <p className="text-xs sm:text-sm text-purple-200 mb-6 max-w-xs leading-relaxed">
+            <p className="text-xs sm:text-sm text-purple-200 mb-5 sm:mb-6 max-w-xs leading-relaxed">
               Work on live campaigns and build portfolio assets that recruiters directly ask for in interviews.
             </p>
             <button
               onClick={onOpenModal}
-              className="px-8 py-3.5 rounded-xl bg-white text-[#4b1864] font-extrabold text-sm shadow-md transition-all hover:bg-[#faf7fc] hover:scale-105 active:scale-95 cursor-pointer"
+              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white text-[#4b1864] font-extrabold text-sm shadow-md transition-all hover:bg-[#faf7fc] hover:scale-105 active:scale-95 cursor-pointer"
             >
               Join Next Batch
             </button>

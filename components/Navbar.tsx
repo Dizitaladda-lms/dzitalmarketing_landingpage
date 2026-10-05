@@ -40,10 +40,16 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-6 text-xs xl:text-sm font-semibold text-[#4a2e5d]">
             <button
-              onClick={() => scrollTo('curriculum')}
+              onClick={() => scrollTo('highlights')}
               className="hover:text-[#4b1864] transition-colors py-1 cursor-pointer"
             >
-              70 Modules
+              Why Choose Us
+            </button>
+            <button
+              onClick={() => scrollTo('tools')}
+              className="hover:text-[#4b1864] transition-colors py-1 cursor-pointer"
+            >
+              Tools &amp; AI
             </button>
             <button
               onClick={() => scrollTo('projects')}
@@ -55,7 +61,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               onClick={() => scrollTo('placements')}
               className="hover:text-[#4b1864] transition-colors py-1 cursor-pointer"
             >
-              100% Placement
+              Hiring Partners
             </button>
             <button
               onClick={() => scrollTo('mentors')}
@@ -64,13 +70,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               Mentors
             </button>
             <button
-              onClick={() => scrollTo('reviews')}
-              className="hover:text-[#4b1864] transition-colors py-1 cursor-pointer"
-            >
-              Reviews (4.9 Rating)
-            </button>
-            <button
-              onClick={() => scrollTo('faqs')}
+              onClick={() => scrollTo('faq')}
               className="hover:text-[#4b1864] transition-colors py-1 cursor-pointer"
             >
               FAQs
@@ -107,7 +107,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               className="px-3 py-1.5 rounded-lg bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] font-bold text-xs"
               aria-label="Toggle menu"
             >
-              {mobileMenuOpen ? 'Close' : 'Menu'}
+              {mobileMenuOpen ? '✕' : '☰ Menu'}
             </button>
           </div>
         </div>
@@ -118,37 +118,37 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
         <div className="sm:hidden bg-white border-b border-[#ebdcf5] px-4 pt-3 pb-5 space-y-3 shadow-lg">
           <div className="grid grid-cols-2 gap-2 text-xs font-bold text-[#2e103d]">
             <button
+              onClick={() => scrollTo('highlights')}
+              className="p-2.5 rounded-lg bg-[#faf7fc] text-left hover:bg-[#f5edfa] border border-[#ebdcf5]"
+            >
+              Why Choose Us
+            </button>
+            <button
+              onClick={() => scrollTo('tools')}
+              className="p-2.5 rounded-lg bg-[#faf7fc] text-left hover:bg-[#f5edfa] border border-[#ebdcf5]"
+            >
+              Tools &amp; AI
+            </button>
+            <button
               onClick={() => scrollTo('projects')}
               className="p-2.5 rounded-lg bg-[#faf7fc] text-left hover:bg-[#f5edfa] border border-[#ebdcf5]"
             >
               Live Projects
             </button>
             <button
-              onClick={() => scrollTo('curriculum')}
-              className="p-2.5 rounded-lg bg-[#faf7fc] text-left hover:bg-[#f5edfa] border border-[#ebdcf5]"
-            >
-              70 Modules &amp; AI
-            </button>
-            <button
               onClick={() => scrollTo('placements')}
               className="p-2.5 rounded-lg bg-[#faf7fc] text-left hover:bg-[#f5edfa] border border-[#ebdcf5]"
             >
-              100% Placement
+              Hiring Partners
             </button>
             <button
               onClick={() => scrollTo('mentors')}
               className="p-2.5 rounded-lg bg-[#faf7fc] text-left hover:bg-[#f5edfa] border border-[#ebdcf5]"
             >
-              Expert Mentors
+              Mentors
             </button>
             <button
-              onClick={() => scrollTo('reviews')}
-              className="p-2.5 rounded-lg bg-[#faf7fc] text-left hover:bg-[#f5edfa] border border-[#ebdcf5]"
-            >
-              Reviews (4.9 Rating)
-            </button>
-            <button
-              onClick={() => scrollTo('faqs')}
+              onClick={() => scrollTo('faq')}
               className="p-2.5 rounded-lg bg-[#faf7fc] text-left hover:bg-[#f5edfa] border border-[#ebdcf5]"
             >
               FAQs

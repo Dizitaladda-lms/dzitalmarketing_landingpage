@@ -41,7 +41,7 @@ export default function FAQSection({ onOpenModal }: FAQSectionProps) {
             <div key={idx} className="border border-[#ebdcf5] rounded-xl bg-[#faf7fc] overflow-hidden">
               <button
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                className="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none cursor-pointer"
+                className="w-full px-4 sm:px-6 py-3.5 sm:py-4 text-left flex justify-between items-center focus:outline-none cursor-pointer"
               >
                 <span className="font-bold text-[#200e30] text-sm sm:text-base pr-4">
                   {faq.q}
@@ -51,7 +51,7 @@ export default function FAQSection({ onOpenModal }: FAQSectionProps) {
                 </span>
               </button>
               {openIndex === idx && (
-                <div className="px-6 pb-5 text-sm text-[#5e4b6d] leading-relaxed border-t border-[#ebdcf5] pt-4">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-5 text-xs sm:text-sm text-[#5e4b6d] leading-relaxed border-t border-[#ebdcf5] pt-3 sm:pt-4">
                   {faq.a}
                 </div>
               )}
@@ -59,11 +59,11 @@ export default function FAQSection({ onOpenModal }: FAQSectionProps) {
           ))}
         </div>
 
-        <div className="mt-10 text-center">
-          <p className="text-sm text-[#5e4b6d] mb-4">Still have questions? Talk to our counsellor directly.</p>
+        <div className="mt-8 sm:mt-10 text-center">
+          <p className="text-xs sm:text-sm text-[#5e4b6d] mb-3 sm:mb-4">Still have questions? Talk to our counsellor directly.</p>
           <button
             onClick={onOpenModal}
-            className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer"
+            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer"
           >
             Speak To Our Counsellor
           </button>
