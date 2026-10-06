@@ -7,7 +7,7 @@ export default function StatsSection() {
     { value: '25,000+', label: 'Learners Trained' },
     { value: '250+',    label: 'Hiring Partners' },
     { value: '₹10.05 LPA', label: 'Highest Salary' },
-    { value: '4.9 ★',  label: 'Average Rating' },
+    { value: '4.9 / 5.0', label: 'Verified Rating' },
   ];
 
   return (
@@ -32,19 +32,19 @@ export default function StatsSection() {
             <li className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-[#4b1864] shrink-0" />
               <span className="text-sm sm:text-base font-bold text-[#200e30]">
-                Generative AI Integrated Curriculum <span className="font-normal text-[#5e4b6d]">(70 Industry Modules)</span>
+                <strong className="text-[#4b1864]">Generative AI Integrated</strong> Curriculum <span className="font-normal text-[#5e4b6d]">(70 Industry Modules)</span>
               </span>
             </li>
             <li className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-[#4b1864] shrink-0" />
               <span className="text-sm sm:text-base font-bold text-[#200e30]">
-                Classroom (GK-II New Delhi) &amp; Live Online Interactive Batches
+                <strong className="text-[#4b1864]">Classroom (GK-II New Delhi)</strong> &amp; <strong className="text-[#4b1864]">Live Online</strong> Interactive Batches
               </span>
             </li>
             <li className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-[#4b1864] shrink-0" />
               <span className="text-sm sm:text-base font-bold text-[#200e30]">
-                100% Placement Support with Dedicated Career Drives
+                <strong className="text-[#4b1864]">100% Placement Support</strong> with Dedicated Career Drives
               </span>
             </li>
           </ul>
@@ -92,7 +92,7 @@ export default function StatsSection() {
             {/* Google Verified Rating */}
             <div className="pl-0 sm:pl-4 border-t sm:border-t-0 sm:border-l border-[#ebdcf5] text-left">
               <div className="text-sm font-extrabold text-[#4b1864]">
-                ★ 4.9 out of 5.0
+                4.9 out of 5.0 Rating
               </div>
               <div className="text-xs text-[#5e4b6d]">
                 12,872 Verified Google Reviews

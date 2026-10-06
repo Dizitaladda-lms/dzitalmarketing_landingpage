@@ -118,36 +118,35 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-start">
           {/* Left Column: Headlines & Subheading (PW Skills Text & Alignment) */}
           <div className="lg:col-span-7 space-y-4 sm:space-y-6 text-left">
-            {/* Single Continuous Running Line Ticker for Skill India & Awards */}
+            {/* Single Continuous Running Line Ticker for Skill India & Awards (Clean Text - No Icons) */}
             <div className="w-full overflow-hidden select-none py-1 [mask-image:linear-gradient(to_right,transparent,black_4%,black_96%,transparent)]">
               <div className="flex gap-2.5 sm:gap-3 animate-marquee shrink-0 items-center whitespace-nowrap">
                 {[
                   { label: 'Skill India • Govt. Recognized', isGovt: true },
-                  { label: '🏆 Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
-                  { label: '🏆 Bharat Business Award — by Ashneer Grover', isGovt: false },
-                  { label: '🏆 The Excellence Award — Hotel School', isGovt: false },
+                  { label: 'Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
+                  { label: 'Bharat Business Award — by Ashneer Grover', isGovt: false },
+                  { label: 'The Excellence Award — Hotel School', isGovt: false },
                   { label: 'Skill India • Govt. Recognized', isGovt: true },
-                  { label: '🏆 Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
-                  { label: '🏆 Bharat Business Award — by Ashneer Grover', isGovt: false },
-                  { label: '🏆 The Excellence Award — Hotel School', isGovt: false },
+                  { label: 'Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
+                  { label: 'Bharat Business Award — by Ashneer Grover', isGovt: false },
+                  { label: 'The Excellence Award — Hotel School', isGovt: false },
                   { label: 'Skill India • Govt. Recognized', isGovt: true },
-                  { label: '🏆 Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
-                  { label: '🏆 Bharat Business Award — by Ashneer Grover', isGovt: false },
-                  { label: '🏆 The Excellence Award — Hotel School', isGovt: false },
+                  { label: 'Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
+                  { label: 'Bharat Business Award — by Ashneer Grover', isGovt: false },
+                  { label: 'The Excellence Award — Hotel School', isGovt: false },
                   { label: 'Skill India • Govt. Recognized', isGovt: true },
-                  { label: '🏆 Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
-                  { label: '🏆 Bharat Business Award — by Ashneer Grover', isGovt: false },
-                  { label: '🏆 The Excellence Award — Hotel School', isGovt: false },
+                  { label: 'Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
+                  { label: 'Bharat Business Award — by Ashneer Grover', isGovt: false },
+                  { label: 'The Excellence Award — Hotel School', isGovt: false },
                 ].map((badge, idx) => (
                   <span
                     key={idx}
-                    className={`inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold px-3 py-1 sm:py-1.5 rounded-full border shadow-sm whitespace-nowrap shrink-0 ${
+                    className={`inline-flex items-center text-[11px] sm:text-xs font-bold px-3 py-1 sm:py-1.5 rounded-full border shadow-sm whitespace-nowrap shrink-0 ${
                       badge.isGovt
                         ? 'bg-[#f5edfa] border-[#ebdcf5] text-[#4b1864]'
                         : 'bg-white border-[#ebdcf5] text-[#4b1864]'
                     }`}
                   >
-                    {badge.isGovt && <span className="w-2 h-2 rounded-full bg-[#4b1864] animate-pulse" />}
                     {badge.label}
                   </span>
                 ))}
@@ -159,22 +158,22 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
             </h1>
 
             <p className="text-sm sm:text-base lg:text-lg text-[#554266] leading-relaxed font-medium">
-              Learn AI-powered marketing tools, work on real-world projects, and grow your career with placement assistance through the <strong className="text-[#200e30]">DizitalAdda</strong> Certified Digital Marketing Course.
+              Learn <strong className="text-[#4b1864] font-bold">AI-Powered Marketing Tools</strong>, work on <strong className="text-[#4b1864] font-bold">Real-World Client Projects</strong>, and grow your career with <strong className="text-[#4b1864] font-bold">100% Placement Assistance</strong> through the <strong className="text-[#200e30] font-black">DizitalAdda</strong> Certified Digital Marketing Course.
             </p>
 
-            {/* Key Benefits List with Emojis from PW Skills Reference */}
+            {/* Key Benefits List with Highlighted Keywords (No Icons) */}
             <ul className="space-y-3 pt-2 text-left">
-              <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
-                <span className="text-xl sm:text-2xl shrink-0"></span>
-                <span>Generative AI Integrated Curriculum</span>
+              <li className="flex items-start gap-2.5 text-sm sm:text-base lg:text-lg text-[#200e30]">
+                <span className="text-[#4b1864] font-black text-lg leading-none mt-0.5">•</span>
+                <span><strong className="text-[#4b1864] font-extrabold">Generative AI Integrated</strong> Curriculum (70 Modules)</span>
               </li>
-              <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
-                <span className="text-xl sm:text-2xl shrink-0"></span>
-                <span>3 Months Duration | Live + Recorded Classes</span>
+              <li className="flex items-start gap-2.5 text-sm sm:text-base lg:text-lg text-[#200e30]">
+                <span className="text-[#4b1864] font-black text-lg leading-none mt-0.5">•</span>
+                <span><strong className="text-[#4b1864] font-extrabold">3 Months Duration</strong> | Live Interactive + Classroom Batches</span>
               </li>
-              <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
-                <span className="text-xl sm:text-2xl shrink-0"></span>
-                <span>Job Assistance</span>
+              <li className="flex items-start gap-2.5 text-sm sm:text-base lg:text-lg text-[#200e30]">
+                <span className="text-[#4b1864] font-black text-lg leading-none mt-0.5">•</span>
+                <span><strong className="text-[#4b1864] font-extrabold">100% Placement Support</strong> with Dedicated Career Drives</span>
               </li>
             </ul>
           </div>

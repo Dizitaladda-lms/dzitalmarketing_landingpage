@@ -72,7 +72,7 @@ export default function HiringPartners() {
           Our Students Work At <span className="heading-gradient">Top Brands</span>
         </h2>
         <p className="text-sm sm:text-base text-[#5e4b6d]">
-          Join 25,000+ alumni working at global tech giants and leading Indian startups.
+          Join <strong className="text-[#4b1864] font-bold">25,000+ alumni</strong> working at global tech giants and leading Indian startups.
         </p>
       </div>
 

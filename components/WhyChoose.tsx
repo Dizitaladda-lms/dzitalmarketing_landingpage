@@ -10,23 +10,35 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
   const features = [
     {
       title: 'Hands-on Industry Projects',
-      desc: 'Work on real-world case studies including SEO audits, 10 live ad campaigns with actual budgets, and social media growth strategies.',
+      desc: (
+        <>
+          Work on real-world case studies including <strong className="text-[#4b1864]">SEO audits</strong>, <strong className="text-[#4b1864]">10 live ad campaigns with actual budgets</strong>, and social media growth strategies.
+        </>
+      ),
     },
     {
       title: 'Placement Support',
       desc: (
         <>
-          Dedicated career coaches, resume building, mock interviews, and direct access to 250+ hiring partners with highest CTC of <strong className="text-[#4b1864] font-bold">₹10.05 LPA</strong>.
+          Dedicated career coaches, resume building, mock interviews, and direct access to <strong className="text-[#4b1864]">250+ hiring partners</strong> with highest CTC of <strong className="text-[#4b1864] font-black">₹10.05 LPA</strong> and <strong className="text-[#4b1864]">60% avg hike</strong>.
         </>
       ),
     },
     {
       title: 'Dual Certification',
-      desc: 'Earn recognized certificates from DizitalAdda & NSDC, plus complete preparation for official Google & Meta certifications.',
+      desc: (
+        <>
+          Earn recognized certificates from <strong className="text-[#4b1864]">DizitalAdda &amp; NSDC</strong>, plus complete preparation for official <strong className="text-[#4b1864]">Google &amp; Meta certifications</strong>.
+        </>
+      ),
     },
     {
       title: 'Pioneering Hybrid Model & 60+ AI Tools',
-      desc: 'Attend interactive offline batches at Greater Kailash-II South Delhi campus or join live online from anywhere, mastering ChatGPT-4o, Gemini & Automations.',
+      desc: (
+        <>
+          Attend interactive offline batches at <strong className="text-[#4b1864]">Greater Kailash-II South Delhi campus</strong> or join <strong className="text-[#4b1864]">live online from anywhere</strong>, mastering <strong className="text-[#4b1864]">ChatGPT-4o, Gemini &amp; Automations</strong>.
+        </>
+      ),
     },
   ];
 

@@ -15,7 +15,7 @@ export default function MidCTABanner({ onOpenModal }: MidCTABannerProps) {
             Get the <span className="heading-gradient">Course Syllabus</span>
           </h2>
           <p className="text-xs sm:text-base text-[#5e4b6d] max-w-2xl mx-auto mb-6 sm:mb-8 font-medium leading-relaxed">
-            Take the first step towards a high-paying career in Digital Marketing. Explore every module, tool, and project covered in the course.
+            Take the first step towards a <strong className="text-[#4b1864] font-bold">high-paying career in Digital Marketing</strong>. Explore all <strong className="text-[#4b1864] font-bold">70 modules, AI tools, and live projects</strong> covered in the course.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <button

@@ -11,31 +11,51 @@ export default function ProjectsSection({ onOpenModal }: ProjectsSectionProps) {
     {
       id: '01',
       title: 'Full-Funnel Integrated Growth Strategy',
-      desc: 'Build a complete integrated growth plan covering paid acquisition, organic marketing, and retention systems. Design customer journeys, align funnels, and create scalable ROI-driven marketing strategies.',
+      desc: (
+        <>
+          Build a complete integrated growth plan covering <strong className="text-[#4b1864]">paid acquisition</strong>, <strong className="text-[#4b1864]">organic marketing</strong>, and <strong className="text-[#4b1864]">retention systems</strong>.
+        </>
+      ),
       tools: ['Funnel Architecture', 'Meta Ads', 'Retention CRM', 'Growth Loops'],
     },
     {
       id: '02',
       title: 'AI-Powered Content Engine & Social Media Execution Calendar',
-      desc: 'Create a 30-day AI-driven content engine with structured prompts and content matrices. Develop a platform-wise social media execution calendar aligned with funnel stages and audience mapping.',
+      desc: (
+        <>
+          Create a 30-day AI content engine with <strong className="text-[#4b1864]">structured prompts</strong>, content matrices, and <strong className="text-[#4b1864]">platform audience mapping</strong>.
+        </>
+      ),
       tools: ['ChatGPT-4o', 'Canva AI', 'Content Matrix', 'Audience Mapping'],
     },
     {
       id: '03',
       title: 'Google Ads Campaign Architecture & Media Planning',
-      desc: 'Design a complete Google Search campaign structure including keyword mapping, ad group architecture, budget allocation strategy, and responsive search ad frameworks optimized for performance.',
+      desc: (
+        <>
+          Design a complete Google Search campaign structure including <strong className="text-[#4b1864]">keyword mapping</strong>, <strong className="text-[#4b1864]">media budgeting</strong>, and <strong className="text-[#4b1864]">RSA ads</strong>.
+        </>
+      ),
       tools: ['Google Search Ads', 'Keyword Planner', 'Media Budgeting', 'RSA Ads'],
     },
     {
       id: '04',
       title: 'Conversion Tracking & Performance Optimization Blueprint',
-      desc: 'Implement pixel tracking and GA4 event setup to measure campaign effectiveness. Build a performance optimization strategy report covering CPA, ROAS, and scaling logic to improve marketing outcomes.',
+      desc: (
+        <>
+          Implement pixel tracking and <strong className="text-[#4b1864]">GA4 event setup</strong> to measure campaign CPA, <strong className="text-[#4b1864]">ROAS scaling</strong>, and funnel conversions.
+        </>
+      ),
       tools: ['GA4', 'Tag Manager (GTM)', 'Conversion API', 'ROAS Scaling'],
     },
     {
       id: '05',
       title: 'Marketing Performance Dashboard & Analytics Report',
-      desc: 'Create a marketing dashboard visualizing CAC, ROAS, retention metrics, and campaign KPIs. Deliver a data-driven analysis report to support strategic growth decisions.',
+      desc: (
+        <>
+          Create a live marketing dashboard visualizing <strong className="text-[#4b1864]">CAC, ROAS</strong>, retention metrics, and <strong className="text-[#4b1864]">campaign KPIs</strong>.
+        </>
+      ),
       tools: ['Looker Studio', 'CAC Tracking', 'KPI Dashboards', 'Client Reporting'],
     },
   ];
@@ -85,11 +105,11 @@ export default function ProjectsSection({ onOpenModal }: ProjectsSectionProps) {
             </div>
           ))}
 
-          {/* 6th Card: Join Next Batch CTA Card */}
+          {/* 6th Card: Join Next Batch CTA Card (No Icons) */}
           <div className="bg-gradient-to-br from-[#4b1864] to-[#300c40] rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-center text-center shadow-xl text-white relative overflow-hidden">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white/10 flex items-center justify-center font-black text-xl sm:text-2xl mb-4 text-white">
-              ★
-            </div>
+            <span className="px-3.5 py-1 rounded-full bg-white/20 text-white font-extrabold text-[11px] uppercase tracking-wider mb-4">
+              Live Portfolio
+            </span>
             <h3 className="text-xl sm:text-2xl font-black mb-2 sm:mb-3">
               Ready to build your portfolio?
             </h3>
