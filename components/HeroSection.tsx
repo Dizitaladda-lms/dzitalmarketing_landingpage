@@ -118,24 +118,40 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-start">
           {/* Left Column: Headlines & Subheading (PW Skills Text & Alignment) */}
           <div className="lg:col-span-7 space-y-4 sm:space-y-6 text-left">
-            <div className="flex flex-wrap items-center gap-2">
-              <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-[11px] sm:text-xs font-bold tracking-wide">
-                <span className="w-2 h-2 rounded-full bg-[#4b1864] animate-pulse" />
-                Skill India &bull; Govt. Recognized
+            {/* Single Continuous Running Line Ticker for Skill India & Awards */}
+            <div className="w-full overflow-hidden select-none py-1 [mask-image:linear-gradient(to_right,transparent,black_4%,black_96%,transparent)]">
+              <div className="flex gap-2.5 sm:gap-3 animate-marquee shrink-0 items-center whitespace-nowrap">
+                {[
+                  { label: 'Skill India • Govt. Recognized', isGovt: true },
+                  { label: '🏆 Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
+                  { label: '🏆 Bharat Business Award — by Ashneer Grover', isGovt: false },
+                  { label: '🏆 The Excellence Award — Hotel School', isGovt: false },
+                  { label: 'Skill India • Govt. Recognized', isGovt: true },
+                  { label: '🏆 Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
+                  { label: '🏆 Bharat Business Award — by Ashneer Grover', isGovt: false },
+                  { label: '🏆 The Excellence Award — Hotel School', isGovt: false },
+                  { label: 'Skill India • Govt. Recognized', isGovt: true },
+                  { label: '🏆 Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
+                  { label: '🏆 Bharat Business Award — by Ashneer Grover', isGovt: false },
+                  { label: '🏆 The Excellence Award — Hotel School', isGovt: false },
+                  { label: 'Skill India • Govt. Recognized', isGovt: true },
+                  { label: '🏆 Indian Icon Award — by Dr. Kiran Bedi', isGovt: false },
+                  { label: '🏆 Bharat Business Award — by Ashneer Grover', isGovt: false },
+                  { label: '🏆 The Excellence Award — Hotel School', isGovt: false },
+                ].map((badge, idx) => (
+                  <span
+                    key={idx}
+                    className={`inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold px-3 py-1 sm:py-1.5 rounded-full border shadow-sm whitespace-nowrap shrink-0 ${
+                      badge.isGovt
+                        ? 'bg-[#f5edfa] border-[#ebdcf5] text-[#4b1864]'
+                        : 'bg-white border-[#ebdcf5] text-[#4b1864]'
+                    }`}
+                  >
+                    {badge.isGovt && <span className="w-2 h-2 rounded-full bg-[#4b1864] animate-pulse" />}
+                    {badge.label}
+                  </span>
+                ))}
               </div>
-            </div>
-
-            {/* Award Recognition Badges */}
-            <div className="flex flex-wrap items-center gap-2 pt-0.5">
-              <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full bg-white border border-[#ebdcf5] text-[#4b1864] shadow-sm">
-                🏆 Indian Icon Award &mdash; by Dr. Kiran Bedi
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full bg-white border border-[#ebdcf5] text-[#4b1864] shadow-sm">
-                🏆 Bharat Business Award &mdash; by Ashneer Grover
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full bg-white border border-[#ebdcf5] text-[#4b1864] shadow-sm">
-                🏆 The Excellence Award &mdash; Hotel School
-              </span>
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#111827] leading-tight tracking-tight">
@@ -149,15 +165,15 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
             {/* Key Benefits List with Emojis from PW Skills Reference */}
             <ul className="space-y-3 pt-2 text-left">
               <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
-                <span className="text-xl sm:text-2xl shrink-0">🤖</span>
+                <span className="text-xl sm:text-2xl shrink-0"></span>
                 <span>Generative AI Integrated Curriculum</span>
               </li>
               <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
-                <span className="text-xl sm:text-2xl shrink-0">⏳</span>
+                <span className="text-xl sm:text-2xl shrink-0"></span>
                 <span>3 Months Duration | Live + Recorded Classes</span>
               </li>
               <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
-                <span className="text-xl sm:text-2xl shrink-0">💼</span>
+                <span className="text-xl sm:text-2xl shrink-0"></span>
                 <span>Job Assistance</span>
               </li>
             </ul>
