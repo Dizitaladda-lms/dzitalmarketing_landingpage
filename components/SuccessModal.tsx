@@ -65,7 +65,7 @@ export default function SuccessModal({ leadData, onClose }: SuccessModalProps) {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-extrabold text-sm sm:text-base shadow-sm flex items-center justify-center transition-all hover:scale-[1.02]"
+            className="w-full py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm sm:text-base shadow-md flex items-center justify-center transition-all hover:scale-[1.02]"
           >
             Open WhatsApp for Instant Syllabus PDF
           </a>

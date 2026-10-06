@@ -28,7 +28,7 @@ export default function MobileStickyBar({ onOpenModal }: MobileStickyBarProps) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp Us"
-        className="flex-1 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold flex items-center justify-center shadow-sm active:scale-95 transition-transform"
+        className="flex-1 py-2.5 rounded-xl bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold flex items-center justify-center active:scale-95 transition-transform"
       >
         WhatsApp
       </a>

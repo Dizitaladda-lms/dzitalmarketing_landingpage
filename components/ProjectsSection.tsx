@@ -87,7 +87,7 @@ export default function ProjectsSection({ onOpenModal }: ProjectsSectionProps) {
 
           {/* 6th Card: Join Next Batch CTA Card */}
           <div className="bg-gradient-to-br from-[#4b1864] to-[#300c40] rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-center text-center shadow-xl text-white relative overflow-hidden">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white/10 flex items-center justify-center font-black text-xl sm:text-2xl mb-4 text-[#fde047]">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white/10 flex items-center justify-center font-black text-xl sm:text-2xl mb-4 text-white">
               ★
             </div>
             <h3 className="text-xl sm:text-2xl font-black mb-2 sm:mb-3">

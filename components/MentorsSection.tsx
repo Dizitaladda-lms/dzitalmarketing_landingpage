@@ -91,55 +91,62 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
   ];
 
   return (
-    <section id="mentors" className="py-20 bg-white relative overflow-hidden border-t border-[#ebdcf5]">
+    <section id="mentors" className="py-14 md:py-20 bg-white relative overflow-hidden border-t border-[#ebdcf5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight">
+        
+        {/* Header Left-aligned like PW Skills */}
+        <div className="mb-8 sm:mb-12 text-left">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight mb-2">
             Learn From <span className="heading-gradient">Top Industry Leaders</span>
           </h2>
-
           <p className="text-sm sm:text-base text-[#5e4b6d] font-medium">
             Learn directly from experts who have managed multi-crore ad budgets and scaled global brands.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        {/* Carousel on Mobile & Grid on Desktop matching PW Skills */}
+        <div className="flex lg:grid lg:grid-cols-4 overflow-x-auto lg:overflow-visible snap-x snap-mandatory lg:snap-none hide-scrollbar gap-4 sm:gap-6 pb-6 lg:pb-0 scroll-smooth -mx-4 px-4 sm:mx-0 sm:px-0">
           {mentors.map((m, idx) => (
             <div
               key={idx}
-              className="bg-[#faf7fc] rounded-2xl p-5 sm:p-6 flex flex-col justify-between border border-[#ebdcf5] hover:border-[#4b1864] transition-all duration-300 shadow-sm hover:shadow-md group text-center"
+              className="snap-start shrink-0 w-[290px] sm:w-[320px] lg:w-auto bg-[#faf7fc] rounded-2xl p-5 sm:p-6 flex flex-col justify-between border border-[#ebdcf5] hover:border-[#4b1864] transition-all duration-300 shadow-sm hover:shadow-md group text-left"
             >
-              <div className="space-y-3">
-                <div className="relative mx-auto w-24 h-24">
-                  <img
-                    src={m.image}
-                    alt={m.name}
-                    className="w-24 h-24 rounded-full object-cover border-2 border-[#4b1864] shadow-sm bg-white"
-                    onError={(e) => {
-                      const target = e.target as HTMLElement;
-                      target.style.display = 'none';
-                    }}
-                  />
+              <div>
+                {/* Avatar & Name side-by-side like PW Skills */}
+                <div className="flex items-center gap-3.5 mb-4">
+                  <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#4b1864]/20 shrink-0 bg-white shadow-sm">
+                    <img
+                      src={m.image}
+                      alt={m.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLElement;
+                        target.style.display = 'none';
+                      }}
+                    />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="text-base font-black text-[#200e30] tracking-tight truncate">
+                      {m.name}
+                    </h3>
+                    <p className="text-xs font-bold text-[#4b1864] truncate">
+                      {m.role}
+                    </p>
+                    <p className="text-[11px] text-[#5e4b6d] truncate">
+                      {m.domain}
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                  <h3 className="text-base font-black text-[#200e30] tracking-tight">
-                    {m.name}
-                  </h3>
-                  <p className="text-xs font-bold text-[#4b1864] mt-0.5">
-                    {m.role}
-                  </p>
-                  <p className="text-[11px] text-[#5e4b6d] mt-0.5">
-                    {m.domain}
-                  </p>
-                </div>
-
-                <div className="space-y-1 pt-1">
-                  <span className="inline-block text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-[#f3e8fa] text-[#4b1864] border border-[#ebdcf5]">
-                    {m.exp}
-                  </span>
-                  <div className="text-[11px] text-[#200e30] font-semibold">
-                    {m.award}
+                {/* 2-Column Experience Box like PW Skills */}
+                <div className="border-t border-[#ebdcf5] pt-3 mb-3 grid grid-cols-2 gap-2 text-left">
+                  <div>
+                    <p className="text-xs font-bold text-[#200e30]">{m.exp}</p>
+                    <p className="text-[10px] text-[#5e4b6d]">Experience</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-[#200e30] truncate">{m.award}</p>
+                    <p className="text-[10px] text-[#5e4b6d]">Recognition</p>
                   </div>
                 </div>
 
@@ -148,8 +155,8 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
                 </p>
               </div>
 
-              <div className="pt-4 mt-4 border-t border-[#ebdcf5]">
-                <div className="flex flex-wrap gap-1 justify-center">
+              <div className="pt-3 mt-4 border-t border-[#ebdcf5]">
+                <div className="flex flex-wrap gap-1 justify-start">
                   {m.tags.slice(0, 3).map((tag, i) => (
                     <span
                       key={i}

@@ -25,7 +25,7 @@ export default function StatsSection() {
         </div>
 
         {/* Program Highlights & Student Trust Proof Card */}
-        <div className="bg-[#faf7fc] border border-[#ebdcf5] rounded-2xl p-4 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-sm">
+        <div className="bg-[#faf7fc] border border-[#ebdcf5] rounded-2xl p-4 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 shadow-sm">
           
           {/* 3 Key Benefits */}
           <ul className="space-y-3.5 text-left w-full lg:w-auto">
@@ -50,7 +50,7 @@ export default function StatsSection() {
           </ul>
 
           {/* Social Proof Strip with Avatars & Verified Ratings */}
-          <div className="flex flex-col sm:flex-row items-center gap-6 pt-5 lg:pt-0 border-t lg:border-t-0 lg:border-l border-[#ebdcf5] lg:pl-8 w-full lg:w-auto shrink-0 justify-center">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6 pt-5 lg:pt-0 border-t lg:border-t-0 lg:border-l border-[#ebdcf5] lg:pl-8 w-full lg:w-auto shrink-0 justify-start">
             
             {/* Overlapping Student Avatars */}
             <div className="flex items-center">
@@ -91,7 +91,7 @@ export default function StatsSection() {
 
             {/* Google Verified Rating */}
             <div className="pl-0 sm:pl-4 border-t sm:border-t-0 sm:border-l border-[#ebdcf5] text-left">
-              <div className="text-sm font-extrabold text-[#b45309]">
+              <div className="text-sm font-extrabold text-[#4b1864]">
                 ★ 4.9 out of 5.0
               </div>
               <div className="text-xs text-[#5e4b6d]">

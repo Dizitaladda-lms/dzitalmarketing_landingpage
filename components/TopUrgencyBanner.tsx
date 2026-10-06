@@ -8,11 +8,11 @@ interface TopUrgencyBannerProps {
 
 export default function TopUrgencyBanner({ onOpenModal }: TopUrgencyBannerProps) {
   const keywords = [
-    'digital marketing courses online',
-    'online digital marketing course',
+    'digital marketing courses Offilne',
+    'Offline digital marketing course',
     'best digital marketing course in india',
     'digital marketing online course',
-    'digital marketing course online',
+    'digital marketing course Offilne',
     'digital marketing course',
     'dizitaladda digital marketing course',
   ];

@@ -114,58 +114,52 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
   return (
     <section className="relative pt-6 pb-12 sm:pt-8 sm:pb-14 bg-gradient-to-b from-[#faf7fc] via-[#f7f1fb] to-[#faf7fc] border-b border-[#ebdcf5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Award Badges Ribbon */}
-         <div className="px-2.5 sm:px-3.5 py-1 rounded-full bg-white border border-[#e8d8f5] text-[10px] sm:text-xs font-semibold text-[#4b1864] shadow-sm">
-          
-        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-start">
-          {/* Left Column: Headlines & Subheading (PW Skills Text) */}
-          <div className="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-[11px] sm:text-xs font-bold tracking-wide">
-              <span className="w-2 h-2 rounded-full bg-[#4b1864] animate-pulse" />
-              Microsoft Certified &bull; Govt. Recognized
+          {/* Left Column: Headlines & Subheading (PW Skills Text & Alignment) */}
+          <div className="lg:col-span-7 space-y-4 sm:space-y-6 text-left">
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-[11px] sm:text-xs font-bold tracking-wide">
+                <span className="w-2 h-2 rounded-full bg-[#4b1864] animate-pulse" />
+                Skill India &bull; Govt. Recognized
+              </div>
             </div>
 
-            <h1 className="text-[26px] sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#111827] leading-[1.2]">
+            {/* Award Recognition Badges */}
+            <div className="flex flex-wrap items-center gap-2 pt-0.5">
+              <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full bg-white border border-[#ebdcf5] text-[#4b1864] shadow-sm">
+                🏆 Indian Icon Award &mdash; by Dr. Kiran Bedi
+              </span>
+              <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full bg-white border border-[#ebdcf5] text-[#4b1864] shadow-sm">
+                🏆 Bharat Business Award &mdash; by Ashneer Grover
+              </span>
+              <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full bg-white border border-[#ebdcf5] text-[#4b1864] shadow-sm">
+                🏆 The Excellence Award &mdash; Hotel School
+              </span>
+            </div>
+
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#111827] leading-tight tracking-tight">
               Master <span className="heading-gradient">Digital Marketing</span> with AI
             </h1>
 
-            <p className="text-sm sm:text-base lg:text-lg text-[#554266] leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
+            <p className="text-sm sm:text-base lg:text-lg text-[#554266] leading-relaxed font-medium">
               Learn AI-powered marketing tools, work on real-world projects, and grow your career with placement assistance through the <strong className="text-[#200e30]">DizitalAdda</strong> Certified Digital Marketing Course.
             </p>
 
-            {/* Key Benefits List from User Image */}
-            <ul className="space-y-3 pt-1 sm:pt-2 text-left max-w-xl mx-auto lg:mx-0">
+            {/* Key Benefits List with Emojis from PW Skills Reference */}
+            <ul className="space-y-3 pt-2 text-left">
               <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
                 <span className="text-xl sm:text-2xl shrink-0">🤖</span>
                 <span>Generative AI Integrated Curriculum</span>
               </li>
               <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
                 <span className="text-xl sm:text-2xl shrink-0">⏳</span>
-                <span>3 Months Duration | Offline + Recorded Classes</span>
+                <span>3 Months Duration | Live + Recorded Classes</span>
               </li>
               <li className="flex items-center gap-3 text-sm sm:text-base lg:text-lg font-bold text-[#111827]">
                 <span className="text-xl sm:text-2xl shrink-0">💼</span>
                 <span>Job Assistance</span>
               </li>
-             <li className="flex items-centre gap - 3 text-sm sm:text-base lg:text-lg font-bold text-[#11827]">
-               <span className='text-x1 sm:text-2x1 shrink-0'></span>
-               <span>Indian Icon Award — by Dr. Kiran Bedi</span>
-             </li>
-
-             <li className="flex items-centre gap - 3 text-sm sm:text-base lg:text-lg font-bold text-[#11827]">
-               <span className='text-x1 sm:text-2x1 shrink-0'></span>
-               <span>Bharat Business Award — by Ashneer Grover</span>
-             </li>
-
-             <li className="flex items-centre gap - 3 text-sm sm:text-base lg:text-lg font-bold text-[#11827]">
-               <span className='text-x1 sm:text-2x1 shrink-0'></span>
-               <span>The Excellence Award — Hotel School</span>
-             </li>
-
-
-
             </ul>
           </div>
 
@@ -173,7 +167,7 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
           <div className="lg:col-span-5">
             <div className="bg-white border-2 border-[#ebdcf5] rounded-2xl p-4 sm:p-7 shadow-xl shadow-[#4b1864]/5 relative form-card-shadow">
               <div className="text-center mb-5">
-                <span className="text-[11px] font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-[#fef3c7] text-[#92400e] inline-block mb-1.5">
+                <span className="text-[11px] font-extrabold uppercase px-3 py-1 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] inline-block mb-1.5 shadow-sm">
                   Limited Seats!
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-[#200e30] tracking-tight">
@@ -194,7 +188,7 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
                     href="https://wa.me/918810606010?text=Hi%20DizitalAdda,%20I%20just%20submitted%20the%20Digital%20Marketing%20form.%20Please%20send%20me%20the%20curriculum%20and%20fee%20details."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block w-full py-2.5 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs shadow-md transition-colors"
+                    className="inline-block w-full py-2.5 rounded-lg bg-[#4b1864] hover:bg-[#38104c] text-white font-bold text-xs shadow-md transition-colors"
                   >
                     Open WhatsApp Chat Directly
                   </a>
@@ -241,19 +235,7 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
                     </div>
                   </div>
 
-                  <div>
-                    <label className="block text-xs font-semibold text-[#38264a] mb-1">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      placeholder="rahul@example.com"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-[#faf7fc] border border-[#ebdcf5] focus:border-[#4b1864] text-[#200e30] text-xs sm:text-sm placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-[#4b1864]"
-                    />
-                  </div>
+                  
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     <div>
@@ -270,7 +252,6 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
                         <option value="Advanced Digital Marketing (6 Months)">Advanced (6 Months - 60 Modules)</option>
                         <option value="Digital Marketing For Professionals (4 Months)">Professionals (4 Months)</option>
                         <option value="Digital Marketing For Beginners (3 Months)">Beginners (3 Months)</option>
-                        <option value="Weekly Workshop / Free Starter">Free 1-Month Module / Workshop</option>
                       </select>
                     </div>
 

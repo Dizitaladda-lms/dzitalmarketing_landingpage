@@ -23,9 +23,6 @@ export default function Footer({ onOpenModal, onOpenAdmin }: FooterProps) {
                   (e.target as HTMLElement).style.display = 'none';
                 }}
               />
-              <span className="text-[#200e30] font-extrabold text-lg tracking-tight">
-                DIZITAL<span className="text-[#4b1864]">ADDA</span>
-              </span>
             </div>
 
             <p className="text-[#5e4b6d] leading-relaxed text-xs max-w-sm">

@@ -16,7 +16,7 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
       title: 'Placement Support',
       desc: (
         <>
-          Dedicated career coaches, resume building, mock interviews, and direct access to 250+ hiring partners with highest CTC of <strong className="text-[#b45309] font-bold">₹10.05 LPA</strong>.
+          Dedicated career coaches, resume building, mock interviews, and direct access to 250+ hiring partners with highest CTC of <strong className="text-[#4b1864] font-bold">₹10.05 LPA</strong>.
         </>
       ),
     },
@@ -36,7 +36,10 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* Left: Features from the user request */}
-          <div>
+          <div className="text-left">
+            <span className="text-[#4b1864] font-bold text-xs uppercase tracking-wider mb-2 block">
+              Why Choose DizitalAdda
+            </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight mb-4">
               Why Choose <span className="heading-gradient">DizitalAdda Digital Marketing Course?</span>
             </h2>
@@ -79,12 +82,12 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
 
             <div className="relative grid grid-cols-2 gap-3 sm:gap-4 p-4 sm:p-6 bg-white rounded-2xl border border-[#ebdcf5] shadow-xl">
               {[
-                { val: '₹10.05 LPA', label: 'Highest CTC Package', color: 'text-[#b45309]' },
-                { val: '97%',        label: 'Placement Rate',       color: 'text-[#047857]' },
-                { val: '60%',        label: 'Avg. Salary Hike',     color: 'text-[#0369a1]' },
+                { val: '₹10.05 LPA', label: 'Highest CTC Package', color: 'text-[#4b1864]' },
+                { val: '97%',        label: 'Placement Rate',       color: 'text-[#4b1864]' },
+                { val: '60%',        label: 'Avg. Salary Hike',     color: 'text-[#4b1864]' },
                 { val: '70 Modules', label: 'AI-Infused Curriculum', color: 'text-[#4b1864]' },
-                { val: '15 Max',     label: 'Micro-Batch Size',     color: 'text-[#9d174d]' },
-                { val: '60+ Tools',  label: 'AI Tools Covered',     color: 'text-[#6b21a8]' },
+                { val: '15 Max',     label: 'Micro-Batch Size',     color: 'text-[#4b1864]' },
+                { val: '60+ Tools',  label: 'AI Tools Covered',     color: 'text-[#4b1864]' },
               ].map((stat, i) => (
                 <div key={i} className="bg-[#faf7fc] rounded-xl p-3 sm:p-4 border border-[#ebdcf5] text-center">
                   <div className={`text-xl sm:text-2xl font-black ${stat.color}`}>{stat.val}</div>

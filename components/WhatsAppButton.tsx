@@ -13,7 +13,7 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with DizitalAdda Counsellor on WhatsApp"
-      className="hidden sm:flex fixed bottom-6 right-6 z-40 items-center gap-2 px-4 py-3 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm shadow-xl transition-all hover:scale-105 active:scale-95 group cursor-pointer"
+      className="hidden sm:flex fixed bottom-6 right-6 z-40 items-center gap-2 px-5 py-3 rounded-full bg-[#4b1864] hover:bg-[#38104c] text-white font-bold text-sm shadow-xl border border-white/20 transition-all hover:scale-105 active:scale-95 group cursor-pointer"
     >
       <span className="font-bold">WhatsApp</span>
     </a>
