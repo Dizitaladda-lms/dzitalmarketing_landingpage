@@ -25,7 +25,7 @@ export default function MidCTABanner({ onOpenModal }: MidCTABannerProps) {
               Download Syllabus
             </button>
             <p className="text-[#4b1864] text-sm font-bold">
-              Join 25,000+ Learners
+              Joined by 25,000+ Learners
             </p>
           </div>
         </div>

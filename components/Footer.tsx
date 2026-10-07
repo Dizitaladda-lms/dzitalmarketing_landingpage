@@ -90,7 +90,6 @@ export default function Footer({ onOpenModal, onOpenAdmin }: FooterProps) {
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="hidden sm:inline">Press Ctrl + Shift + L for Leads</span>
             <button
               onClick={onOpenAdmin}
               className="px-3 py-1 rounded-md bg-[#faf7fc] hover:bg-[#f3e8fa] border border-[#ebdcf5] text-[#4b1864] text-[10px] font-semibold transition-colors cursor-pointer"

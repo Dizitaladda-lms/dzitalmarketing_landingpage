@@ -22,6 +22,30 @@ export default function FAQSection({ onOpenModal }: FAQSectionProps) {
       q: 'Will I get hands-on experience with AI tools?',
       a: 'Yes, our digital marketing with AI course integrates hands-on modules for ChatGPT, Claude, Midjourney, and other generative AI tools to make you 10x more productive.',
     },
+    {
+      q: 'Can I attend the course online or offline?',
+      a: 'You can choose live online classes or attend in person at the Greater Kailash II campus in South Delhi.',
+    },
+    {
+      q: 'How long does the digital marketing course take?',
+      a: 'Course duration depends on the track you choose: the beginner program is 3 months, the professional program is 4 months, the advanced program is 6 months, and the expert program is 12 months.',
+    },
+    {
+      q: 'Do I need prior experience or a technical background to enroll?',
+      a: 'No prior digital marketing, technical, or coding experience is required for the beginner track. The programs are designed for learners at different stages, from students and job seekers to working professionals and business owners.',
+    },
+    {
+      q: 'Will I work on live projects during the course?',
+      a: 'Yes, the programs include practical projects and campaign work. The number and type of projects depend on the track you choose.',
+    },
+    {
+      q: 'Are weekend or evening batches available?',
+      a: 'Flexible weekday and weekend batches are available, including options for working professionals. Contact our counsellor to confirm the current schedule.',
+    },
+    {
+      q: 'Does the course include certification?',
+      a: "The programs include certification preparation, and the Expert track lists credentials from platforms such as Google, Meta, and HubSpot. External platform certificates may require completing that platform's own assessment.",
+    },
   ];
 
   return (
