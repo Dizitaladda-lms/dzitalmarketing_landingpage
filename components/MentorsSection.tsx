@@ -16,7 +16,7 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
       award: 'Indian Icon Award by Dr. Kiran Bedi',
       desc: 'Recipient of the Indian Icon Award & Bharat Business Award by Ashneer Grover. Specializes in brand architecture, strategic marketing funnels, and AI in business growth.',
       tags: ['Marketing Strategy', 'Brand Scaling', 'Data Science', 'AI in Marketing'],
-      image: 'https://dizitaladda.com/courses/images/trainer/Gulshan.png',
+      image: '/trainers/gulshan.png',
     },
     {
       name: 'Mr. Ram Kumar',
