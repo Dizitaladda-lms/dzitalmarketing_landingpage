@@ -49,9 +49,7 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
 
           {/* Left: Features from the user request */}
           <div className="text-left">
-            <span className="text-[#4b1864] font-bold text-xs uppercase tracking-wider mb-2 block">
-              Why Choose DizitalAdda
-            </span>
+          
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight mb-4">
               Why Choose <span className="heading-gradient">DizitalAdda Digital Marketing Course?</span>
             </h2>
