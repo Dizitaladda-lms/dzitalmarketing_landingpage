@@ -94,81 +94,75 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
     <section id="mentors" className="py-14 md:py-20 bg-white relative overflow-hidden border-t border-[#ebdcf5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Header Left-aligned like PW Skills */}
-        <div className="mb-8 sm:mb-12 text-left">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight mb-2">
-            Learn From <span className="heading-gradient">Top Industry Leaders</span>
-          </h2>
-          <p className="text-sm sm:text-base text-[#5e4b6d] font-medium">
-            Learn directly from experts who have managed multi-crore ad budgets and scaled global brands.
-          </p>
-        </div>
+        <div className="lg:grid lg:grid-cols-[1.05fr_2.2fr] gap-6 lg:items-start">
+          <div className="lg:sticky lg:top-24 self-start mb-6 lg:mb-0">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111827] tracking-tight mb-4">
+              Learn From <span className="heading-gradient">Top Industry Leaders</span>
+            </h2>
+            <p className="text-sm sm:text-base text-[#5e4b6d] font-medium max-w-xl leading-relaxed">
+              Learn directly from experts who have managed multi-crore ad budgets and scaled global brands.
+            </p>
+          </div>
 
-        {/* Carousel on Mobile & Grid on Desktop matching PW Skills */}
-        <div className="flex lg:grid lg:grid-cols-4 overflow-x-auto lg:overflow-visible snap-x snap-mandatory lg:snap-none hide-scrollbar gap-4 sm:gap-6 pb-6 lg:pb-0 scroll-smooth -mx-4 px-4 sm:mx-0 sm:px-0">
-          {mentors.map((m, idx) => (
-            <div
-              key={idx}
-              className="snap-start shrink-0 w-[290px] sm:w-[320px] lg:w-auto bg-[#faf7fc] rounded-2xl p-5 sm:p-6 flex flex-col justify-between border border-[#ebdcf5] hover:border-[#4b1864] transition-all duration-300 shadow-sm hover:shadow-md group text-left"
-            >
-              <div>
-                {/* Avatar & Name side-by-side like PW Skills */}
-                <div className="flex items-center gap-3.5 mb-4">
-                  <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#4b1864]/20 shrink-0 bg-white shadow-sm">
-                    <img
-                      src={m.image}
-                      alt={m.name}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.target as HTMLElement;
-                        target.style.display = 'none';
-                      }}
-                    />
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-2">
+            {mentors.map((m, idx) => (
+              <div
+                key={idx}
+                className="bg-[#faf7fc] rounded-2xl p-4 sm:p-5 flex flex-col justify-between border border-[#ebdcf5] hover:border-[#4b1864] transition-all duration-300 shadow-sm hover:shadow-md group text-left"
+              >
+                <div>
+                  <div className="flex items-center gap-3.5 mb-4">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-[#4b1864]/20 shrink-0 bg-white shadow-sm">
+                      <img
+                        src={m.image}
+                        alt={m.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLElement;
+                          target.style.display = 'none';
+                        }}
+                      />
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="text-base sm:text-lg font-black text-[#200e30] tracking-tight leading-tight">
+                        {m.name}
+                      </h3>
+                      <p className="text-[10px] sm:text-xs font-bold text-[#4b1864] leading-tight">
+                        {m.role}
+                      </p>
+                      <p className="text-[9px] sm:text-[11px] text-[#5e4b6d] leading-tight">
+                        {m.domain}
+                      </p>
+                    </div>
                   </div>
-                  <div className="min-w-0">
-                    <h3 className="text-base font-black text-[#200e30] tracking-tight truncate">
-                      {m.name}
-                    </h3>
-                    <p className="text-xs font-bold text-[#4b1864] truncate">
-                      {m.role}
-                    </p>
-                    <p className="text-[11px] text-[#5e4b6d] truncate">
-                      {m.domain}
-                    </p>
-                  </div>
-                </div>
 
-                {/* 2-Column Experience Box like PW Skills */}
-                <div className="border-t border-[#ebdcf5] pt-3 mb-3 grid grid-cols-2 gap-2 text-left">
-                  <div>
-                    <p className="text-xs font-bold text-[#200e30]">{m.exp}</p>
-                    <p className="text-[10px] text-[#5e4b6d]">Experience</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-[#200e30] truncate">{m.award}</p>
-                    <p className="text-[10px] text-[#5e4b6d]">Recognition</p>
+                  <div className="border-t border-[#ebdcf5] pt-3 mb-3 grid grid-cols-2 gap-2 text-left">
+                    <div>
+                      <p className="text-xs font-bold text-[#200e30] leading-tight">{m.exp}</p>
+                      <p className="text-[10px] text-[#5e4b6d]">Experience</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-[#200e30] leading-tight truncate">{m.award}</p>
+                      <p className="text-[10px] text-[#5e4b6d]">Recognition</p>
+                    </div>
                   </div>
                 </div>
 
-                <p className="text-xs text-[#5e4b6d] leading-relaxed text-left pt-2 border-t border-[#ebdcf5]">
-                  {m.desc}
-                </p>
-              </div>
-
-              <div className="pt-3 mt-4 border-t border-[#ebdcf5]">
-                <div className="flex flex-wrap gap-1 justify-start">
-                  {m.tags.slice(0, 3).map((tag, i) => (
-                    <span
-                      key={i}
-                      className="text-[9px] font-semibold text-[#4b1864] px-2 py-0.5 rounded bg-white border border-[#ebdcf5]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                <div className="pt-3 mt-3 border-t border-[#ebdcf5]">
+                  <div className="flex flex-wrap gap-1.5 justify-start">
+                    {m.tags.slice(0, 3).map((tag, i) => (
+                      <span
+                        key={i}
+                        className="text-[9px] sm:text-[10px] font-semibold text-[#4b1864] px-2 py-0.5 rounded bg-white border border-[#ebdcf5]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="mt-8 sm:mt-12 text-center px-2">

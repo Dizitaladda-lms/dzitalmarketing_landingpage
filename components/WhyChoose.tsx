@@ -107,14 +107,9 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
             </div>
 
             {/* Floating badge (safe position on mobile to prevent overflow) */}
-            <div className="absolute -bottom-4 left-2 sm:-left-4 bg-white border border-[#ebdcf5] rounded-xl px-3 sm:px-4 py-2 sm:py-3 shadow-lg flex items-center gap-2.5 sm:gap-3">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#f3e8fa] flex items-center justify-center text-[#4b1864] font-black text-xs sm:text-sm">
-                55%
-              </div>
-              <div>
-                <p className="text-[9px] sm:text-[10px] text-[#5e4b6d] font-bold">Avg. Hike</p>
-                <p className="text-xs sm:text-sm font-black text-[#4b1864]">55% – 80%</p>
-              </div>
+            <div className="absolute -bottom-4 left-2 sm:-left-4 bg-white border border-[#ebdcf5] rounded-xl px-3 sm:px-4 py-2 sm:py-3 shadow-lg">
+              <p className="text-[9px] sm:text-[10px] text-[#5e4b6d] font-bold">Avg. Hike</p>
+              <p className="text-xs sm:text-sm font-black text-[#4b1864]">55% – 80%</p>
             </div>
           </div>
         </div>

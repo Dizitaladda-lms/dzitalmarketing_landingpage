@@ -73,7 +73,11 @@ export default function Footer({ onOpenModal, onOpenAdmin }: FooterProps) {
 
         {/* Disclaimer */}
         <p className="text-[11px] text-[#8a7a99] leading-relaxed border-t border-[#ebdcf5] pt-4">
-          Empowering careers through industry-aligned education and cutting-edge technology. Disclaimer: Program outcomes and salary hikes depend on student dedication, project submissions, technical assessment performance, and interview preparation. 100% placement support indicates continuous mentorship, profile optimization, and referral drives through our network of 250+ hiring partners.
+          Empowering careers through industry-aligned education and cutting-edge technology.
+        </p>
+
+        <p className="text-[11px] text-[#8a7a99] leading-relaxed border-t border-[#ebdcf5] pt-4">
+          Disclaimer: Program outcomes and salary hikes depend on student dedication, project submissions, technical assessment performance, and interview preparation. 100% placement support indicates continuous mentorship, profile optimization, and referral drives through our network of 250+ hiring partners.
         </p>
 
         {/* Bottom Bar with Admin Lead Viewer Trigger & Policy Links */}
