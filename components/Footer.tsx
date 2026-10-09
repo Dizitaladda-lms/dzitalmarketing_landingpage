@@ -85,9 +85,9 @@ export default function Footer({ onOpenModal, onOpenAdmin }: FooterProps) {
           <div className="flex flex-wrap items-center gap-4">
             <span>&copy; {new Date().getFullYear()} DizitalAdda. All rights reserved.</span>
             <span className="hidden sm:inline">&bull;</span>
-            <a href="#" className="hover:text-[#4b1864] transition-colors">Terms of Service</a>
+            <a href="https://dizitaladda.com/terms-of-use" className="hover:text-[#4b1864] transition-colors">Terms of Service</a>
             <span className="hidden sm:inline">&bull;</span>
-            <a href="#" className="hover:text-[#4b1864] transition-colors">Privacy Policy</a>
+            <a href="https://dizitaladda.com/privacy-policy" className="hover:text-[#4b1864] transition-colors">Privacy Policy</a>
             <span className="hidden sm:inline">&bull;</span>
             <a href="#" className="hover:text-[#4b1864] transition-colors">Contact Us</a>
           </div>

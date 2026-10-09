@@ -7,7 +7,6 @@ export default function StatsSection() {
     { value: '25,000+', label: 'Learners Trained' },
     { value: '250+',    label: 'Hiring Partners' },
     { value: '₹10.05 LPA', label: 'Highest Salary' },
-    { value: '4.9 / 5.0', label: 'Verified Rating' },
   ];
 
   return (
@@ -15,7 +14,7 @@ export default function StatsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
         {/* 4 Core Numbers Bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
+        <div className="grid grid-cols-3 gap-4 sm:gap-6 text-center">
           {stats.map((s, i) => (
             <div key={i} className="px-2 py-1">
               <p className="text-2xl sm:text-3xl font-black text-[#4b1864] mb-1">{s.value}</p>
@@ -49,10 +48,8 @@ export default function StatsSection() {
             </li>
           </ul>
 
-          {/* Social Proof Strip with Avatars & Verified Ratings */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6 pt-5 lg:pt-0 border-t lg:border-t-0 lg:border-l border-[#ebdcf5] lg:pl-8 w-full lg:w-auto shrink-0 justify-start">
-            
-            {/* Overlapping Student Avatars */}
+          {/* Student Trust Proof */}
+          <div className="flex items-center gap-5 pt-5 lg:pt-0 border-t lg:border-t-0 lg:border-l border-[#ebdcf5] lg:pl-8 w-full lg:w-auto shrink-0 justify-start">
             <div className="flex items-center">
               <div className="flex -space-x-2.5 overflow-hidden">
                 <img
@@ -88,17 +85,6 @@ export default function StatsSection() {
                 <div className="text-xs text-[#5e4b6d]">Trained since 2009</div>
               </div>
             </div>
-
-            {/* Google Verified Rating */}
-            <div className="pl-0 sm:pl-4 border-t sm:border-t-0 sm:border-l border-[#ebdcf5] text-left">
-              <div className="text-sm font-extrabold text-[#4b1864]">
-                4.9 out of 5.0 Rating
-              </div>
-              <div className="text-xs text-[#5e4b6d]">
-                12,872 Verified Google Reviews
-              </div>
-            </div>
-
           </div>
         </div>
 
