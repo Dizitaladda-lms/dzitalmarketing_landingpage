@@ -48,8 +48,7 @@ export default function Footer({ onOpenModal, onOpenAdmin }: FooterProps) {
               2nd Floor, Spacetime Management Pvt Ltd Design House, Savitri Cinema Complex, Greater Kailash II, New Delhi 110048
             </div>
             <div className="text-xs text-[#200e30] font-medium pt-1">
-              Phone: <a href="tel:+918810606010" className="hover:text-[#4b1864] transition-colors underline">+91 8810606010</a> / +91 92054 36796
-            </div>
+              Phone: <a href="tel:+918810606010" className="hover:text-[#4b1864] transition-colors underline">+91 8810606010</a></div>
             <div className="text-xs text-[#5e4b6d]">
               Email: info@dizitaladda.com
             </div>
