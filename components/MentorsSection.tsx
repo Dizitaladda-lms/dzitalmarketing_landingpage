@@ -66,7 +66,7 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
       award: 'Top-Ranked Local Strategist',
       desc: 'Master of Google Business Profile (GBP) 3-pack rankings, local search ads, automated review funnels, and hyper-targeted lead generation.',
       tags: ['Google Business Profile', 'Local SEO', 'Lead Generation', 'Local Ads'],
-      image: 'https://dizitaladda.com/courses/images/trainer/Kaushal.png',
+      image: '/trainers/kaushal.png',
     },
     {
       name: 'Mr. Deepanshu Soni',
@@ -76,7 +76,7 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
       award: 'Full-Stack Data Trainer',
       desc: 'Guides students on SQL, Python for marketers, Looker Studio automated client reporting, and social media data mining.',
       tags: ['SQL', 'Python', 'Looker Studio', 'Social Analytics'],
-      image: 'https://dizitaladda.com/courses/images/trainer/deepanshu.jpeg',
+      image: '/trainers/deepanshu.png',
     },
     {
       name: 'Mr. Govind Bisht',
@@ -86,7 +86,7 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
       award: 'AI Search Innovator',
       desc: 'Pioneering Search AI optimization for Google AI Overviews, Perplexity search citations, and generative engine optimization (GEO).',
       tags: ['Search AI', 'AI Overviews', 'AEO', 'GEO', 'LLMO'],
-      image: 'https://dizitaladda.com/courses/images/trainer/Govind.png',
+      image: '/trainers/govind.png',
     },
   ];
 
