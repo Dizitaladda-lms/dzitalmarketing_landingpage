@@ -29,7 +29,7 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
       image: 'https://dizitaladda.com/courses/images/trainer/Ram.png',
     },
     {
-      name: 'k Saurabh ',
+      name: 'Mr k Saurabh ',
       role: 'Performance Lead Trainer',
       domain: 'Paid Ads & Media Buying',
       exp: '15+ Years Experience',
