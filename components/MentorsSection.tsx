@@ -99,68 +99,71 @@ export default function MentorsSection({ onOpenModal }: MentorsSectionProps) {
             Learn From <span className="heading-gradient">Top Industry Leaders</span>
           </h2>
           <p className="text-sm sm:text-base text-[#5e4b6d] font-medium">
-            Learn directly from experts who have managed multi-crore ad budgets and scaled global brands.
+            Learn directly from experts who have managed <strong className="text-[#4b1864] font-bold">multi-crore ad budgets</strong> and scaled <strong className="text-[#4b1864] font-bold">global brands</strong>.
           </p>
         </div>
 
-        <div className="flex overflow-x-auto hide-scrollbar gap-4 sm:gap-6 pb-3 snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0">
-          {mentors.map((m, idx) => (
-            <div
-              key={idx}
-              className="snap-start shrink-0 w-[290px] sm:w-[320px] lg:w-[calc(25%-18px)] bg-[#faf7fc] rounded-2xl p-4 sm:p-5 flex flex-col justify-between border border-[#ebdcf5] hover:border-[#4b1864] transition-all duration-300 shadow-sm hover:shadow-md group text-left"
-            >
-              <div>
-                <div className="flex items-center gap-3.5 mb-4">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-[#4b1864]/20 shrink-0 bg-white shadow-sm">
-                    <img
-                      src={m.image}
-                      alt={m.name}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.target as HTMLElement;
-                        target.style.display = 'none';
-                      }}
-                    />
+        {/* Continuous Auto-Scrolling Trainers Marquee */}
+        <div className="relative w-full overflow-hidden py-2 [mask-image:linear-gradient(to_right,transparent,black_3%,black_97%,transparent)]">
+          <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+            {[...mentors, ...mentors].map((m, idx) => (
+              <div
+                key={idx}
+                className="shrink-0 w-[285px] sm:w-[310px] mr-4 sm:mr-6 bg-[#faf7fc] rounded-2xl p-4 sm:p-5 flex flex-col justify-between border border-[#ebdcf5] hover:border-[#4b1864] transition-all duration-300 shadow-sm hover:shadow-md group text-left"
+              >
+                <div>
+                  <div className="flex items-center gap-3.5 mb-4">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-[#4b1864]/20 shrink-0 bg-white shadow-sm">
+                      <img
+                        src={m.image}
+                        alt={m.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLElement;
+                          target.style.display = 'none';
+                        }}
+                      />
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="text-base sm:text-lg font-black text-[#200e30] tracking-tight leading-tight truncate">
+                        {m.name}
+                      </h3>
+                      <p className="text-[10px] sm:text-xs font-bold text-[#4b1864] leading-tight truncate">
+                        {m.role}
+                      </p>
+                      <p className="text-[9px] sm:text-[11px] text-[#5e4b6d] leading-tight truncate">
+                        {m.domain}
+                      </p>
+                    </div>
                   </div>
-                  <div className="min-w-0">
-                    <h3 className="text-base sm:text-lg font-black text-[#200e30] tracking-tight leading-tight truncate">
-                      {m.name}
-                    </h3>
-                    <p className="text-[10px] sm:text-xs font-bold text-[#4b1864] leading-tight truncate">
-                      {m.role}
-                    </p>
-                    <p className="text-[9px] sm:text-[11px] text-[#5e4b6d] leading-tight truncate">
-                      {m.domain}
-                    </p>
+
+                  <div className="border-t border-[#ebdcf5] pt-3 mb-3 grid grid-cols-2 gap-2 text-left">
+                    <div>
+                      <p className="text-xs font-bold text-[#4b1864] leading-tight">{m.exp}</p>
+                      <p className="text-[10px] text-[#5e4b6d]">Experience</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-[#200e30] leading-tight truncate">{m.award}</p>
+                      <p className="text-[10px] text-[#5e4b6d]">Recognition</p>
+                    </div>
                   </div>
                 </div>
 
-                <div className="border-t border-[#ebdcf5] pt-3 mb-3 grid grid-cols-2 gap-2 text-left">
-                  <div>
-                    <p className="text-xs font-bold text-[#200e30] leading-tight">{m.exp}</p>
-                    <p className="text-[10px] text-[#5e4b6d]">Experience</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-[#200e30] leading-tight truncate">{m.award}</p>
-                    <p className="text-[10px] text-[#5e4b6d]">Recognition</p>
+                <div className="pt-3 mt-3 border-t border-[#ebdcf5]">
+                  <div className="flex flex-wrap gap-1.5 justify-start">
+                    {m.tags.slice(0, 3).map((tag, i) => (
+                      <span
+                        key={i}
+                        className="text-[9px] sm:text-[10px] font-semibold text-[#4b1864] px-2 py-0.5 rounded bg-white border border-[#ebdcf5]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
-
-              <div className="pt-3 mt-3 border-t border-[#ebdcf5]">
-                <div className="flex flex-wrap gap-1.5 justify-start">
-                  {m.tags.slice(0, 3).map((tag, i) => (
-                    <span
-                      key={i}
-                      className="text-[9px] sm:text-[10px] font-semibold text-[#4b1864] px-2 py-0.5 rounded bg-white border border-[#ebdcf5]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="mt-8 sm:mt-12 text-center px-2">

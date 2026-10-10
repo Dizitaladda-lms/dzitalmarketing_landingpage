@@ -23,7 +23,7 @@ export default function LeadModal({
     fullName: '',
     phone: '',
     email: '',
-    course: 'Expert in Digital Marketing (12 Months)',
+    course: 'Digital Marketing For Beginners (3 Months)',
     mode: 'Offline Classroom (GK-II, New Delhi)',
     experience: 'Student / Fresh Graduate',
     wantsSyllabus: true,
@@ -215,10 +215,11 @@ export default function LeadModal({
                 onChange={(e) => setFormData({ ...formData, course: e.target.value })}
                 className="w-full px-2.5 py-2 rounded-xl bg-[#faf7fc] border border-[#ebdcf5] text-[#200e30] text-xs focus:outline-none focus:border-[#4b1864]"
               >
-                <option value="Expert in Digital Marketing (12 Months)">Expert (12M - 70 Modules)</option>
-                <option value="Advanced Digital Marketing (6 Months)">Advanced (6M - 60 Modules)</option>
-                <option value="Digital Marketing For Professionals (4 Months)">Professionals (4M Track)</option>
-                <option value="Digital Marketing For Beginners (3 Months)">Beginners (3M Track)</option>
+                <option value="Digital Marketing For Beginners (3 Months)">Beginners (3 Months)</option>
+                <option value="Digital Marketing For Professionals (4 Months)">Professionals (4 Months)</option>
+                <option value="Advanced Digital Marketing (6 Months)">Advanced (6 Months - 60 Modules)</option>
+                <option value="Expert in Digital Marketing (12 Months)">Expert (12 Months - 70 Modules)</option>
+                <option value="Graduation in Dizital Marketing (3 years)">Graduation in Dizital Marketing (3 years)</option>
               </select>
             </div>
 
