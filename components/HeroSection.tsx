@@ -12,7 +12,7 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
     email: '',
     phone: '',
     course: 'Digital Marketing For Beginners (3 Months)',
-    mode: 'Offline Classroom (GK-II, New Delhi)',
+    mode: 'Offline — GK-II, South Delhi',
     experience: 'Student / Fresh Graduate',
     wantsSyllabus: true,
   });
@@ -178,18 +178,15 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
             </ul>
           </div>
 
-          {/* Right Column: Clean Light Theme Lead Capture Form (PW Skills Text) */}
+          {/* Right Column: Clean Light Theme Lead Capture Form */}
           <div className="lg:col-span-5">
-            <div className="bg-white border-2 border-[#ebdcf5] rounded-2xl p-4 sm:p-7 shadow-xl shadow-[#4b1864]/5 relative form-card-shadow">
-              <div className="text-center mb-5">
-                <span className="text-[11px] font-extrabold uppercase px-3 py-1 rounded-full bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] inline-block mb-1.5 shadow-sm">
-                  Limited Seats!
-                </span>
-                <h3 className="text-xl sm:text-2xl font-black text-[#200e30] tracking-tight">
-                  Speak To Our Counsellor
+            <div className="bg-white border-2 border-[#ebdcf5] rounded-2xl p-5 sm:p-7 shadow-xl shadow-[#4b1864]/5 relative form-card-shadow">
+              <div className="text-left mb-5">
+                <h3 className="text-xl sm:text-2xl font-black text-[#200e30] tracking-tight leading-snug">
+                  Start Your <span className="heading-gradient">AI + Digital Marketing</span> Journey
                 </h3>
-                <p className="text-xs sm:text-sm text-[#665675] mt-0.5">
-                  Fill details to download curriculum &amp; speak to experts.
+                <p className="text-xs sm:text-sm text-[#554266] font-medium mt-1">
+                  Get course details, syllabus and a free demo session.
                 </p>
               </div>
 
@@ -209,7 +206,7 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
                   </a>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-3.5 text-left">
+                <form onSubmit={handleSubmit} className="space-y-4 text-left">
                   {errorMessage && (
                     <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-red-700 text-xs">
                       {errorMessage}
@@ -217,116 +214,102 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
                   )}
 
                   <div>
-                    <label className="block text-xs font-semibold text-[#38264a] mb-1">
+                    <label className="block text-xs sm:text-sm font-semibold text-[#38264a] mb-1.5">
                       Full Name *
                     </label>
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Rahul Sharma"
+                      placeholder="Enter your full name"
                       value={formData.fullName}
                       onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-[#faf7fc] border border-[#ebdcf5] focus:border-[#4b1864] text-[#200e30] text-xs sm:text-sm placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-[#4b1864]"
+                      className="w-full px-4 py-2.5 rounded-full bg-[#faf7fc] border border-[#ebdcf5] focus:border-[#4b1864] text-[#200e30] text-xs sm:text-sm placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-[#4b1864]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-[#38264a] mb-1">
+                    <label className="block text-xs sm:text-sm font-semibold text-[#38264a] mb-1.5">
                       WhatsApp Mobile Number *
                     </label>
-                    <div className="flex">
-                      <span className="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-[#ebdcf5] bg-[#f5edfa] text-xs font-semibold text-[#4b1864]">
-                        +91
-                      </span>
-                      <input
-                        type="tel"
-                        required
-                        maxLength={10}
-                        placeholder="10-digit phone number"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value.replace(/\D/g, '') })}
-                        className="w-full px-3.5 py-2.5 rounded-r-xl bg-[#faf7fc] border border-[#ebdcf5] focus:border-[#4b1864] text-[#200e30] text-xs sm:text-sm placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-[#4b1864]"
-                      />
-                    </div>
-                  </div>
-
-                  
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                    <div>
-                      <label className="block text-xs font-semibold text-[#38264a] mb-1">
-                        Select Program
-                      </label>
-                      <select
-                        value={formData.course}
-                        onChange={(e) => setFormData({ ...formData, course: e.target.value })}
-                        className="w-full px-2.5 py-2 rounded-xl bg-[#faf7fc] border border-[#ebdcf5] focus:border-[#4b1864] text-[#200e30] text-xs focus:outline-none"
-                      >
-                        <option value="Digital Marketing For Beginners (3 Months)">Beginners (3 Months)</option>
-                        <option value="Digital Marketing For Professionals (4 Months)">Professionals (4 Months)</option>
-                        <option value="Advanced Digital Marketing (6 Months)">Advanced (6 Months - 60 Modules)</option>
-                        <option value="Expert in Digital Marketing (12 Months)">Expert (12 Months - 70 Modules)</option>
-                        <option value="Graduation in Dizital Marketing (3 years)">Graduation in Dizital Marketing (3 years)</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-semibold text-[#38264a] mb-1">
-                        Learning Mode
-                      </label>
-                      <select
-                        value={formData.mode}
-                        onChange={(e) => setFormData({ ...formData, mode: e.target.value })}
-                        className="w-full px-2.5 py-2 rounded-xl bg-[#faf7fc] border border-[#ebdcf5] focus:border-[#4b1864] text-[#200e30] text-xs focus:outline-none"
-                      >
-                        <option value="Offline Classroom (GK-II, New Delhi)">Offline (GK-II South Delhi)</option>
-                        <option value="Online Live Interactive Batch">Online Interactive Live</option>
-                        <option value="Hybrid (Weekend Offline + Online)">Hybrid Mode</option>
-                      </select>
-                    </div>
+                    <input
+                      type="tel"
+                      required
+                      maxLength={10}
+                      placeholder="10-digit mobile number"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value.replace(/\D/g, '') })}
+                      className="w-full px-4 py-2.5 rounded-full bg-[#faf7fc] border border-[#ebdcf5] focus:border-[#4b1864] text-[#200e30] text-xs sm:text-sm placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-[#4b1864]"
+                    />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-[#38264a] mb-1">
-                      Current Background
+                    <label className="block text-xs sm:text-sm font-semibold text-[#38264a] mb-1.5">
+                      Select Course *
                     </label>
                     <select
-                      value={formData.experience}
-                      onChange={(e) => setFormData({ ...formData, experience: e.target.value })}
-                      className="w-full px-2.5 py-2 rounded-xl bg-[#faf7fc] border border-[#ebdcf5] focus:border-[#4b1864] text-[#200e30] text-xs focus:outline-none"
+                      value={formData.course}
+                      onChange={(e) => setFormData({ ...formData, course: e.target.value })}
+                      className="w-full px-4 py-2.5 rounded-full bg-[#faf7fc] border border-[#ebdcf5] focus:border-[#4b1864] text-[#200e30] text-xs sm:text-sm font-semibold focus:outline-none focus:ring-1 focus:ring-[#4b1864]"
                     >
-                      <option value="Student / Fresh Graduate">College Student / Fresh Graduate</option>
-                      <option value="Working Professional">Working Professional (Career Switcher)</option>
-                      <option value="Business Owner / Entrepreneur">Business Owner / Startup Founder</option>
-                      <option value="Freelancer / Housewife">Freelancer / Housewife</option>
-                      <option value="12th Pass Student">12th Pass / School Student</option>
+                      <option value="Digital Marketing For Beginners (3 Months)">Beginners (3 Months)</option>
+                      <option value="Digital Marketing For Professionals (4 Months)">Professionals (4 Months)</option>
+                      <option value="Advanced Digital Marketing (6 Months)">Advanced (6 Months - 60 Modules)</option>
+                      <option value="Expert in Digital Marketing (12 Months)">Expert (12 Months - 70 Modules)</option>
+                      <option value="Graduation in Dizital Marketing (3 years)">Graduation in Dizital Marketing (3 years)</option>
                     </select>
                   </div>
 
-                  <div className="flex items-start gap-2 pt-1">
+                  <div>
+                    <label className="block text-xs sm:text-sm font-semibold text-[#38264a] mb-2">
+                      Preferred Learning Mode *
+                    </label>
+                    <div className="space-y-2">
+                      <label className="flex items-center gap-2.5 cursor-pointer text-xs sm:text-sm font-bold text-[#200e30]">
+                        <input
+                          type="radio"
+                          name="hero-learning-mode"
+                          value="Offline — GK-II, South Delhi"
+                          checked={formData.mode === 'Offline — GK-II, South Delhi'}
+                          onChange={(e) => setFormData({ ...formData, mode: e.target.value })}
+                          className="w-4 h-4 accent-[#4b1864] cursor-pointer"
+                        />
+                        <span>Offline — GK-II, South Delhi</span>
+                      </label>
+                      <label className="flex items-center gap-2.5 cursor-pointer text-xs sm:text-sm font-bold text-[#200e30]">
+                        <input
+                          type="radio"
+                          name="hero-learning-mode"
+                          value="Online"
+                          checked={formData.mode === 'Online'}
+                          onChange={(e) => setFormData({ ...formData, mode: e.target.value })}
+                          className="w-4 h-4 accent-[#4b1864] cursor-pointer"
+                        />
+                        <span>Online</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-2.5 pt-1">
                     <input
                       type="checkbox"
                       id="hero-syllabus-check"
+                      required
                       checked={formData.wantsSyllabus}
                       onChange={(e) => setFormData({ ...formData, wantsSyllabus: e.target.checked })}
-                      className="mt-0.5 rounded text-[#4b1864] focus:ring-[#4b1864] border-[#ebdcf5]"
+                      className="mt-1 w-4 h-4 rounded accent-[#4b1864] border-[#ebdcf5] cursor-pointer shrink-0"
                     />
-                    <label htmlFor="hero-syllabus-check" className="text-[11px] text-[#554266] leading-tight">
-                      Send me 2026 AI-integrated syllabus PDF &amp; fee discounts on WhatsApp.
+                    <label htmlFor="hero-syllabus-check" className="text-xs sm:text-sm font-semibold text-[#200e30] leading-snug cursor-pointer">
+                      I agree to receive course information and follow-up messages on WhatsApp.
                     </label>
                   </div>
 
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm sm:text-base shadow-lg shadow-[#4b1864]/20 transition-all hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center cursor-pointer disabled:opacity-70 mt-2"
+                    className="w-full py-3.5 rounded-full bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm sm:text-base shadow-lg shadow-[#4b1864]/20 transition-all hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center cursor-pointer disabled:opacity-70 mt-2"
                   >
-                    {loading ? 'Submitting...' : 'Book A Free Session'}
+                    {loading ? 'Submitting...' : 'Book A Free Demo Session'}
                   </button>
-
-                  <div className="text-center text-[11px] text-[#665675] pt-1">
-                    By submitting, you agree to our Terms &amp; Privacy Policy.
-                  </div>
                 </form>
               )}
             </div>
