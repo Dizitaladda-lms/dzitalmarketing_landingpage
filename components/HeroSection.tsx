@@ -102,6 +102,19 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
       });
       localStorage.setItem('da_leads', JSON.stringify(existingLeads));
 
+      // Auto-trigger brochure download
+      try {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = '/dizitaladda-digital-marketing-brochure.pdf';
+        downloadLink.download = 'DizitalAdda-Digital-Marketing-Brochure.pdf';
+        downloadLink.target = '_blank';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+      } catch (dlErr) {
+        // Fallback handled by button
+      }
+
       setSubmitted(true);
       setLoading(false);
       onLeadSuccess(payload);
@@ -194,16 +207,27 @@ export default function HeroSection({ onLeadSuccess }: HeroSectionProps) {
                 <div className="bg-[#f5edfa] border border-[#ebdcf5] rounded-xl p-6 text-center space-y-3">
                   <h4 className="text-lg font-bold text-[#4b1864]">Application Received!</h4>
                   <p className="text-xs text-[#554266]">
-                    Our Senior Academic Counsellor will contact you within 15 minutes. We are also sending the syllabus to your WhatsApp number.
+                    Our Senior Academic Counsellor will contact you within 15 minutes. Your brochure download has started below:
                   </p>
-                  <a
-                    href="https://wa.me/918810606010?text=Hi%20DizitalAdda,%20I%20just%20submitted%20the%20Digital%20Marketing%20form.%20Please%20send%20me%20the%20curriculum%20and%20fee%20details."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block w-full py-2.5 rounded-lg bg-[#4b1864] hover:bg-[#38104c] text-white font-bold text-xs shadow-md transition-colors"
-                  >
-                    Open WhatsApp Chat Directly
-                  </a>
+                  <div className="space-y-2 pt-1">
+                    <a
+                      href="/dizitaladda-digital-marketing-brochure.pdf"
+                      download="DizitalAdda-Digital-Marketing-Brochure.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block w-full py-2.5 rounded-lg bg-[#4b1864] hover:bg-[#38104c] text-white font-bold text-xs shadow-md transition-colors"
+                    >
+                      Download Brochure (PDF)
+                    </a>
+                    <a
+                      href="https://wa.me/918810606010?text=Hi%20DizitalAdda,%20I%20just%20submitted%20the%20Digital%20Marketing%20form.%20Please%20send%20me%20the%20curriculum%20and%20fee%20details."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block w-full py-2.5 rounded-lg bg-white border border-[#ebdcf5] hover:bg-[#faf7fc] text-[#4b1864] font-bold text-xs shadow-sm transition-colors"
+                    >
+                      Open WhatsApp Chat Directly
+                    </a>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 text-left">

@@ -18,16 +18,25 @@ export default function MidCTABanner({ onOpenModal }: MidCTABannerProps) {
             Take the first step towards a <strong className="text-[#4b1864] font-bold">high-paying career in Digital Marketing</strong>. Explore all <strong className="text-[#4b1864] font-bold">70 modules, AI tools, and live projects</strong> covered in the course.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <a
+              href="/dizitaladda-digital-marketing-brochure.pdf"
+              download="DizitalAdda-Digital-Marketing-Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer inline-flex items-center justify-center text-center"
+            >
+              Download Syllabus (PDF)
+            </a>
             <button
               onClick={onOpenModal}
-              className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-[#f5edfa] hover:bg-[#ebdcf5] border border-[#ebdcf5] text-[#4b1864] font-extrabold text-sm sm:text-base transition-all cursor-pointer text-center"
             >
-              Download Syllabus
+              Request Free Demo Class
             </button>
-            <p className="text-[#4b1864] text-sm font-bold">
-              Joined by 25,000+ Learners
-            </p>
           </div>
+          <p className="text-[#4b1864] text-xs sm:text-sm font-bold mt-4">
+            Joined by 25,000+ Learners
+          </p>
         </div>
       </div>
     </section>

@@ -75,12 +75,21 @@ export default function WhyChoose({ onOpenModal }: WhyChooseProps) {
               ))}
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col sm:flex-row items-center gap-3">
+              <a
+                href="/dizitaladda-digital-marketing-brochure.pdf"
+                download="DizitalAdda-Digital-Marketing-Brochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer w-full sm:w-auto text-center"
+              >
+                Download Full Curriculum (PDF)
+              </a>
               <button
                 onClick={onOpenModal}
-                className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer w-full md:w-auto"
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-[#faf7fc] hover:bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] font-bold text-sm transition-all cursor-pointer w-full sm:w-auto text-center"
               >
-                Download Full Curriculum
+                Request Free Counselling
               </button>
             </div>
           </div>

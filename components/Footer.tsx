@@ -62,6 +62,15 @@ export default function Footer({ onOpenModal, onOpenAdmin }: FooterProps) {
             <p className="text-xs text-[#5e4b6d]">
               Batches fill on a first-come, first-served basis (max 15 seats per cohort).
             </p>
+            <a
+              href="/dizitaladda-digital-marketing-brochure.pdf"
+              download="DizitalAdda-Digital-Marketing-Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-2.5 rounded-xl bg-[#f5edfa] hover:bg-[#ebdcf5] border border-[#ebdcf5] text-[#4b1864] font-bold text-xs flex items-center justify-center transition-all cursor-pointer text-center"
+            >
+              Download Brochure (PDF)
+            </a>
             <button
               onClick={onOpenModal}
               className="w-full py-2.5 rounded-xl bg-[#4b1864] hover:bg-[#3d1252] text-white font-bold text-xs shadow-sm transition-all hover:scale-105 cursor-pointer"

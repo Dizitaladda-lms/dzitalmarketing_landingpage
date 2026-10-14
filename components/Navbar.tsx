@@ -86,6 +86,16 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               +91 8810606010
             </a>
 
+            <a
+              href="/dizitaladda-digital-marketing-brochure.pdf"
+              download="DizitalAdda-Digital-Marketing-Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-xl bg-[#f5edfa] hover:bg-[#ebdcf5] border border-[#ebdcf5] text-[#4b1864] font-bold text-xs sm:text-sm shadow-sm transition-all cursor-pointer inline-flex items-center"
+            >
+              Download Brochure
+            </a>
+
             <button
               onClick={onOpenModal}
               className="px-5 py-2.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer"
@@ -161,6 +171,15 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               className="flex items-center justify-center py-2.5 rounded-xl bg-[#f5edfa] border border-[#ebdcf5] text-xs font-bold text-[#4b1864]"
             >
               Call Counsellor: +91 8810606010
+            </a>
+            <a
+              href="/dizitaladda-digital-marketing-brochure.pdf"
+              download="DizitalAdda-Digital-Marketing-Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-2.5 rounded-xl bg-[#f5edfa] hover:bg-[#ebdcf5] border border-[#ebdcf5] text-[#4b1864] font-bold text-xs flex items-center justify-center text-center"
+            >
+              Download Brochure (PDF)
             </a>
             <button
               onClick={() => {

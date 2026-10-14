@@ -178,12 +178,15 @@ export default function CurriculumSection({ onDownloadSyllabus }: CurriculumSect
           </p>
 
           <div className="pt-2">
-            <button
-              onClick={onDownloadSyllabus}
-              className="px-6 py-3 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-xs sm:text-sm shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer"
+            <a
+              href="/dizitaladda-digital-marketing-brochure.pdf"
+              download="DizitalAdda-Digital-Marketing-Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-xs sm:text-sm shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer inline-block"
             >
               Download Detailed 70-Module PDF Syllabus
-            </button>
+            </a>
           </div>
         </div>
 
@@ -227,12 +230,15 @@ export default function CurriculumSection({ onDownloadSyllabus }: CurriculumSect
               </p>
             </div>
 
-            <button
-              onClick={onDownloadSyllabus}
-              className="shrink-0 px-5 py-2.5 rounded-xl bg-white hover:bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold transition-colors cursor-pointer shadow-sm"
+            <a
+              href="/dizitaladda-digital-marketing-brochure.pdf"
+              download="DizitalAdda-Digital-Marketing-Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 px-5 py-2.5 rounded-xl bg-white hover:bg-[#f5edfa] border border-[#ebdcf5] text-[#4b1864] text-xs font-bold transition-colors cursor-pointer shadow-sm inline-block"
             >
               Get Module Notes (PDF)
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6">

@@ -114,7 +114,18 @@ export default function LeadModal({
         ...payload,
         submittedAt: new Date().toLocaleString('en-IN'),
       });
-      localStorage.setItem('da_leads', JSON.stringify(existingLeads));
+      // Auto-trigger brochure download
+      try {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = '/dizitaladda-digital-marketing-brochure.pdf';
+        downloadLink.download = 'DizitalAdda-Digital-Marketing-Brochure.pdf';
+        downloadLink.target = '_blank';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+      } catch (dlErr) {
+        // Fallback
+      }
 
       setLoading(false);
       onClose();

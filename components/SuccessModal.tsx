@@ -59,13 +59,23 @@ export default function SuccessModal({ leadData, onClose }: SuccessModalProps) {
           </div>
         </div>
 
-        {/* Instant WhatsApp Action */}
-        <div className="space-y-2 pt-2">
+        {/* Instant Download & WhatsApp Action */}
+        <div className="space-y-2.5 pt-2">
+          <a
+            href="/dizitaladda-digital-marketing-brochure.pdf"
+            download="DizitalAdda-Digital-Marketing-Brochure.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm sm:text-base shadow-md flex items-center justify-center transition-all hover:scale-[1.02] cursor-pointer"
+          >
+            Download Course Brochure (PDF)
+          </a>
+
           <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full py-3.5 rounded-xl bg-[#4b1864] hover:bg-[#38104c] text-white font-extrabold text-sm sm:text-base shadow-md flex items-center justify-center transition-all hover:scale-[1.02]"
+            className="w-full py-2.5 rounded-xl bg-[#f5edfa] hover:bg-[#ebdcf5] border border-[#ebdcf5] text-[#4b1864] text-xs sm:text-sm font-bold flex items-center justify-center transition-colors"
           >
             Open WhatsApp for Instant Syllabus PDF
           </a>

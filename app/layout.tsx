@@ -15,6 +15,17 @@ export const metadata: Metadata = {
     'DizitalAdda Digital Marketing',
   ],
   authors: [{ name: 'DizitalAdda Academy' }],
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: 'Digital Marketing Course in Delhi | 4 Levels, AI Tools, 97% Placement | DizitalAdda',
     description: 'Master SEO, Google Ads, Meta Ads & 60+ AI tools with 10 live brand campaigns, paid internship and 100% placement support at DizitalAdda Delhi.',
@@ -33,6 +44,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="robots" content="noindex, nofollow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+        <meta name="googlebot" content="noindex, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="bingbot" content="noindex, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="icon" href="https://dizitaladda.com/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
