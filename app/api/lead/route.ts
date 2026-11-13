@@ -137,7 +137,10 @@ export async function POST(request: Request) {
         body: JSON.stringify(crmPayload),
       });
       const crmData = await crmRes.json().catch(() => null);
-      crmSyncStatus = !!crmData?.success || crmRes.ok;
+      crmSyncStatus = crmRes.ok && crmData?.success !== false;
+      if (!crmSyncStatus) {
+        console.error(`CRM sync failed with HTTP status ${crmRes.status}`);
+      }
     } catch (crmErr) {
       console.error('CRM sync error:', crmErr);
     }
@@ -163,6 +166,18 @@ export async function POST(request: Request) {
       });
     } catch (sheetErr) {
       console.error('Google Sheet webhook sync error:', sheetErr);
+    }
+
+    if (!crmSyncStatus) {
+      return NextResponse.json(
+        {
+          success: false,
+          crmSynced: false,
+          error: 'CRM sync failed',
+          message: 'We could not confirm your request right now. Please contact us directly before submitting again.',
+        },
+        { status: 502 }
+      );
     }
 
     return NextResponse.json({
