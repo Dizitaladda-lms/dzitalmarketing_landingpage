@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 
 const CRM_ENDPOINT = process.env.CRM_ENDPOINT || 'https://leads.dizitaladda.com/api/public/leads';
+const SITE_URL = process.env.SITE_URL || 'https://dizitaladda.com';
 const GOOGLE_SHEET_URL = process.env.GOOGLE_SHEET_URL || 'https://script.google.com/macros/s/AKfycbwdmPYObEhNaUpMi2LrY2ylEjpwjqU5zwX62yZ_vsH5avKabgYpSNu1NsR1AMXgorFi/exec';
 const CRM_COURSE_NAME = 'Executive Certification in Digital Marketing & AI';
 const CRM_API_KEY = process.env.CRM_API_KEY || '';
@@ -124,9 +125,13 @@ export async function POST(request: Request) {
     // Forward to CRM asynchronously
     let crmSyncStatus = false;
     try {
+      const requestOrigin = request.headers.get('origin');
+      const requestReferer = request.headers.get('referer');
       const headers: Record<string, string> = {
         'Content-Type': 'application/json',
         Accept: 'application/json',
+        Origin: requestOrigin || new URL(SITE_URL).origin,
+        Referer: requestReferer || new URL('/digital-marketing', SITE_URL).toString(),
       };
       if (CRM_API_KEY) {
         // The CRM's public integration gateway accepts API keys through
