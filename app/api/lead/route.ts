@@ -129,6 +129,9 @@ export async function POST(request: Request) {
         Accept: 'application/json',
       };
       if (CRM_API_KEY) {
+        // The CRM's public integration gateway accepts API keys through
+        // X-API-Key; keep Bearer for deployments using token auth.
+        headers['X-API-Key'] = CRM_API_KEY;
         headers['Authorization'] = `Bearer ${CRM_API_KEY}`;
       }
       const crmRes = await fetch(CRM_ENDPOINT, {
@@ -136,10 +139,22 @@ export async function POST(request: Request) {
         headers,
         body: JSON.stringify(crmPayload),
       });
-      const crmData = await crmRes.json().catch(() => null);
+      const responseText = await crmRes.text();
+      let crmData: any = null;
+      try {
+        crmData = responseText ? JSON.parse(responseText) : null;
+      } catch {
+        // Some gateways return plain text or HTML for auth failures.
+      }
       crmSyncStatus = crmRes.ok && crmData?.success !== false;
       if (!crmSyncStatus) {
-        console.error(`CRM sync failed with HTTP status ${crmRes.status}`);
+        // Include the CRM's explanation so deployment logs reveal whether
+        // credentials, endpoint access, or request policy caused the failure.
+        console.error('CRM sync failed:', {
+          status: crmRes.status,
+          response: (crmData?.message || crmData?.error || responseText || '').slice(0, 500),
+          apiKeyConfigured: Boolean(CRM_API_KEY),
+        });
       }
     } catch (crmErr) {
       console.error('CRM sync error:', crmErr);
